@@ -1,10 +1,29 @@
-import React from "react";
-
+import React, { useState, useEffect} from "react";
 import CardItem from "./elements/cards";
 import noticia from "../images/noticia.png";
 import noticia1 from "../images/noticia1.png";
+import axios from "axios";
 
-const NovedadesCards = ()=>{
+
+const NovedadesCards = (props)=>{
+
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState ([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+
+            console.log(response.data)
+
+        };
+ 
+        cargarNovedades();
+    }, [0]);
+
     return(
         <div id="card-novedades">
        <CardItem title="Novedades"
