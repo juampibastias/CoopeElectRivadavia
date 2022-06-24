@@ -58,7 +58,7 @@ p {
 }
 
 .nav-bg {
-  background-color: #5ee295;
+  background-color: #c7eb7a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +72,7 @@ p {
           justify-content: flex-end;
 }
 
-.nav-bg .nav {
+.nav-bg .nav.navdesktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +95,7 @@ p {
           justify-content: space-between;
 }
 
-.nav-bg .nav .redes-sociales {
+.nav-bg .nav.navdesktop .redes-sociales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,19 +116,19 @@ p {
   right: 10%;
 }
 
-.nav-bg .nav .redes-sociales .nav-item a {
+.nav-bg .nav.navdesktop .redes-sociales .nav-item a {
   height: 50px;
   width: 50px;
 }
 
-.nav-bg .nav .redes-sociales .nav-item a img {
+.nav-bg .nav.navdesktop .redes-sociales .nav-item a img {
   height: 100%;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.nav-bg .nav .nav-links {
+.nav-bg .nav.navdesktop .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +140,7 @@ p {
       flex-wrap: nowrap;
 }
 
-.nav-bg .nav .nav-links .nav-item {
+.nav-bg .nav.navdesktop .nav-links .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,25 +150,34 @@ p {
           flex-direction: row;
 }
 
-.nav-bg .nav .nav-links .nav-item .vr {
+.nav-bg .nav.navdesktop .nav-links .nav-item .dropdown .dropdown-toggle:focus {
+  color: white;
+  background-color: #00c853;
+}
+
+.nav-bg .nav.navdesktop .nav-links .nav-item .dropdown .dropdown-menu {
+  background-color: #c7eb7a;
+}
+
+.nav-bg .nav.navdesktop .nav-links .nav-item .vr {
   opacity: 1;
   color: #00c853;
   width: 2px;
 }
 
-.nav-bg .nav .nav-links .nav-item a {
+.nav-bg .nav.navdesktop .nav-links .nav-item a {
   color: #00c853;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.nav-bg .nav .nav-links .nav-item button {
+.nav-bg .nav.navdesktop .nav-links .nav-item button {
   font-weight: 600;
   font-size: 1.5rem;
   color: #00c853;
 }
 
-.nav-bg .nav .Logo-link {
+.nav-bg .nav.navdesktop .Logo-link {
   width: 110px;
   height: 110px;
   display: -webkit-box;
@@ -178,11 +187,175 @@ p {
   padding: 0;
 }
 
-.nav-bg .nav .Logo-link .logo-coope-home {
+.nav-bg .nav.navdesktop .Logo-link .logo-coope-home {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.nav-bg .nav.navmobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav-bg .nav.navmobile.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container .logo-container {
+  padding-left: 1rem;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container .logo-container .Logo-link {
+  width: 110px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container .logo-container .Logo-link .logo-coope-home {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container .ToggleMenu {
+  padding-right: 1rem;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container .ToggleMenu:hover {
+  cursor: pointer;
+}
+
+.nav-bg .nav.navmobile .logotoggle-container .ToggleMenu i {
+  font-size: 1.8rem;
+}
+
+.nav-bg .nav.navmobile .mobile-links {
+  z-index: 100;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 0vh;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-bg .nav.navmobile .mobile-links .redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.nav-bg .nav.navmobile .mobile-links .redes-sociales .nav-item a {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-bg .nav.navmobile .mobile-links .redes-sociales .nav-item a img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav-bg .nav.navmobile .mobile-links .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.nav-bg .nav.navmobile .mobile-links .nav-item .dropdown .dropdown-toggle:focus {
+  color: white;
+  background-color: #00c853;
+}
+
+.nav-bg .nav.navmobile .mobile-links .nav-item .dropdown .dropdown-menu {
+  background-color: #c7eb7a;
+}
+
+.nav-bg .nav.navmobile .mobile-links .nav-item .vr {
+  opacity: 1;
+  color: #00c853;
+  width: 2px;
+}
+
+.nav-bg .nav.navmobile .mobile-links .nav-item a {
+  color: #00c853;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.nav-bg .nav.navmobile .mobile-links .nav-item button {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #00c853;
+}
+
+.nav-bg .nav.navmobile .mobile-links.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
 }
 
 #spinner {
@@ -232,6 +405,17 @@ p {
   position: relative;
 }
 
+#spinner .nav-item .nav-link:hover img:nth-child(2) {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+#spinner .nav-item .nav-link:hover img:nth-child(1) {
+  opacity: 1;
+  -webkit-transform: scale(1.2) rotateZ(360deg);
+          transform: scale(1.2) rotateZ(360deg);
+}
+
 #spinner .nav-item .nav-link .spinner-img {
   position: absolute;
   top: 0;
@@ -241,12 +425,6 @@ p {
   opacity: 0.3;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-#spinner .nav-item .nav-link .spinner-img:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.2) rotateZ(360deg);
-          transform: scale(1.2) rotateZ(360deg);
 }
 
 #spinner .nav-item .nav-link img {
@@ -310,6 +488,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 500px;
+  margin-right: 150px;
 }
 
 #novedades-title .novedades-title a img {
@@ -859,7 +1038,7 @@ footer .link-list-footer li ul li::before {
 .contenedor-contacto .contenedor-info ul li .contacto-info-item p {
   text-decoration: none;
   text-align: left;
-  color: black;
+  color: white;
   margin: 0;
   padding: 0;
   display: none;
@@ -1207,33 +1386,19 @@ footer .link-list-footer li ul li::before {
 }
 
 @media screen and (max-width: 900px) {
-  .nav-bg .nav {
-    padding: 0.5rem 0.5rem;
+  .nav-bg {
+    height: auto;
   }
-  .nav-bg .nav .redes-sociales {
-    top: -25%;
-    right: 10%;
+  .nav-bg .nav.navdesktop {
+    display: none;
   }
-  .nav-bg .nav .nav-links .nav-item a {
-    font-size: 0.9rem;
-  }
-  .nav-bg .nav .nav-links .nav-item button {
-    font-size: 0.9rem;
-  }
-  .nav-bg .nav .Logo-link {
-    width: 110px;
-    height: 110px;
+  .nav-bg .nav.navmobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
-    padding: 0;
   }
-  .nav-bg .nav .Logo-link .logo-coope-home {
-    width: 100%;
-    height: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
+  .nav-bg .nav.navmobile .nav-links {
+    visibility: hidden;
   }
   .payment-method-container .payment-method-content {
     width: 70%;
@@ -1250,7 +1415,7 @@ footer .link-list-footer li ul li::before {
     width: 80%;
   }
   .contact-form .optional-text {
-    width: 50%;
+    width: 80%;
   }
   .contact-form .background-form {
     width: 90%;
@@ -1354,6 +1519,7 @@ footer .link-list-footer li ul li::before {
         -ms-flex-align: center;
             align-items: center;
     width: 400px;
+    margin-right: 50px;
   }
   #novedades-title .novedades-title a img {
     z-index: 1;
@@ -1415,6 +1581,314 @@ footer .link-list-footer li ul li::before {
     left: 0;
     z-index: 0;
     width: 70%;
+  }
+  .lambada h1 {
+    border-top: 2px solid white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+  }
+  footer .img-container img {
+    width: 75%;
+  }
+  footer .hr {
+    width: 80%;
+    border-top: 2px solid white;
+    margin: 1rem 0;
+  }
+  footer .link-list-footer {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
+  }
+  footer .link-list-footer li {
+    position: relative;
+    list-style: none;
+  }
+  footer .link-list-footer li ul li {
+    font-size: 0.9rem;
+  }
+  footer .link-list-footer li ul li::before {
+    content: "»";
+    position: absolute;
+    left: -1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bg .nav {
+    padding: 0.5rem 0.5rem;
+  }
+  .nav-bg .nav .redes-sociales {
+    top: -25%;
+    right: 10%;
+  }
+  .nav-bg .nav .nav-links .nav-item .vr {
+    width: 1px;
+  }
+  .nav-bg .nav .nav-links .nav-item a {
+    font-size: .8rem;
+  }
+  .nav-bg .nav .nav-links .nav-item button {
+    font-size: .8rem;
+  }
+  .nav-bg .nav .Logo-link {
+    width: 110px;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bg .nav .Logo-link .logo-coope-home {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .contact-form .optional-text {
+    width: 80%;
+  }
+  .contact-form .background-form {
+    width: 90%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .contact-form .background-form form {
+    padding: 1.5rem 0;
+    width: 90%;
+  }
+  .contact-form .background-form form .input-item img {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-form .background-form form .input-item label {
+    height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 20rem;
+  }
+  .contact-form .background-form form .input-item label input {
+    border: none;
+  }
+  .contact-form .background-form form .input-item .label-ta {
+    height: auto;
+  }
+  .contact-form .background-form form .input-item .label-ta textarea {
+    border: none;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .contenedor-contacto {
+    width: 90%;
+  }
+  .contenedor-contacto .contenedor-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-contacto .contenedor-info h1 {
+    color: #00c853;
+    font-weight: bold;
+  }
+  .contenedor-contacto .contenedor-info ul li img {
+    width: 70px;
+    height: 70px;
+  }
+  .contenedor-contacto .contenedor-info ul li .contacto-info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    background-color: #00c853;
+    left: 25px;
+    z-index: 0;
+    border-radius: 50px;
+  }
+  .contenedor-contacto .contenedor-info ul li .contacto-info-item h3 {
+    font-weight: bold;
+  }
+  .contenedor-contacto .contenedor-info ul li:hover .contacto-info-item {
+    width: 15rem;
+  }
+  .contenedor-contacto .contenedor-img-chat img {
+    width: 110px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contenedor-contacto .contenedor-img-chat img:nth-child(2) {
+    position: absolute;
+    top: 25%;
+    right: 0;
+  }
+  .Follow-Us-container .title-group h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .Follow-Us-container .title-group p {
+    text-transform: uppercase;
+  }
+  .Follow-Us-container .social-media-container ul li a {
+    width: 70px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0.5rem;
+  }
+  #spinner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #spinner .nav-item .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90px;
+    height: auto;
+    padding: 0.9rem;
+    position: relative;
+  }
+  #spinner .nav-item h2 {
+    font-size: 1.1rem;
+  }
+  #eficiencia-energetica .lampTitle h1 {
+    font-size: 1.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #00c853;
+    z-index: 1;
+    width: 50%;
+    text-align: center;
+  }
+  #eficiencia-energetica .lampTitle .esquina-img-lamp {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: 50%;
+  }
+  #eficiencia-energetica .lampTitle img {
+    width: 50%;
+  }
+  .redes-efiener .nav-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+  .redes-efiener .nav-item a img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer .img-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .img-container img {
+    width: 60%;
+  }
+  footer .hr {
+    width: 80%;
+    border-top: 2px solid white;
+    margin: 1rem 0;
+  }
+  footer .link-list-footer li {
+    position: relative;
+    list-style: none;
+  }
+  footer .link-list-footer li ul li {
+    font-size: 0.9rem;
+  }
+  footer .link-list-footer li ul li::before {
+    content: "»";
+    position: absolute;
+    left: -1rem;
+  }
+  #card-novedades .card {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #card-novedades .card:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #card-novedades .card:nth-child(even) .card-img-top {
+    width: 100%;
+    height: 150px;
+  }
+  #card-novedades .card:nth-child(even) img {
+    border-left: 3rem solid #00c853;
+    border-right: none;
+    width: 100%;
+  }
+  #card-novedades .card:nth-child(even) .card-body {
+    color: #00c853;
+    position: relative;
+  }
+  #card-novedades .card:nth-child(even) .card-body .card-title {
+    text-align: end;
+  }
+  #card-novedades .card:nth-child(even) .card-body .card-text {
+    text-align: end;
+  }
+  #card-novedades .card:nth-child(even) .card-body .nav-item {
+    text-align: start;
+    margin-left: auto;
+  }
+  #card-novedades .card:nth-child(even) .card-body .nav-item img {
+    border-left: none;
+  }
+  #card-novedades .card img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    border-right: 3rem solid #00c853;
+  }
+  #card-novedades .card .card-body .nav-item img {
+    border-right: none;
   }
 }
 /*# sourceMappingURL=App.css.map */

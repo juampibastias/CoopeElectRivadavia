@@ -20,7 +20,7 @@ p {
 }
 
 //variables
-$color_green_light: #5ee295;
+$color_green_light: #c7eb7a;
 $color_link: #00c853;
 
 
@@ -72,7 +72,7 @@ $color_link: #00c853;
     height: 150px;
     justify-content: flex-end;
 
-    .nav {
+    .nav.navdesktop {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -119,6 +119,19 @@ $color_link: #00c853;
                 display: flex;
                 flex-direction: row;
 
+                .dropdown {
+                    .dropdown-toggle {
+                        &:focus {
+                            color: white;
+                            background-color: $color_link;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        background-color: $color_green_light;
+                    }
+                }
+
                 .vr {
                     opacity: 1;
                     color: $color_link;
@@ -154,6 +167,152 @@ $color_link: #00c853;
             }
         }
 
+
+
+    }
+
+    .nav.navmobile {
+        display: none;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+
+        position: relative;
+        z-index: 100;
+
+
+        background-color: white;
+
+        &.navbar-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+
+        .logotoggle-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .logo-container {
+                padding-left: 1rem;
+
+                .Logo-link {
+                    width: 110px;
+                    height: 110px;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+
+                    .logo-coope-home {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .ToggleMenu {
+                padding-right: 1rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                i {
+                    font-size: 1.8rem;
+                }
+
+            }
+        }
+
+
+
+        .mobile-links {
+            z-index: 100;
+
+            .redes-sociales {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 0;
+                left: 0;
+
+                .nav-item {
+
+
+                    a {
+                        height: 50px;
+                        width: 50px;
+
+                        img {
+                            height: 100%;
+                            width: auto;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            display: none;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 0vh;
+            transition: all 0.5s ease-in-out;
+
+            .nav-item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .dropdown {
+                    .dropdown-toggle {
+                        &:focus {
+                            color: white;
+                            background-color: $color_link;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        background-color: $color_green_light;
+                    }
+                }
+
+                .vr {
+                    opacity: 1;
+                    color: $color_link;
+                    width: 2px;
+                }
+
+                a {
+                    color: $color_link;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    color: $color_link;
+                }
+
+            }
+
+            &.active {
+                display: flex;
+                height: 50vh;
+
+            }
+        }
     }
 }
 
@@ -183,6 +342,17 @@ $color_link: #00c853;
             padding: 1rem;
             position: relative;
 
+            &:hover {
+                img:nth-child(2) {
+                    filter: brightness(0.8);
+                }
+
+                img:nth-child(1) {
+                    opacity: 1;
+                    transform: scale(1.2) rotateZ(360deg);
+                }
+            }
+
             //imagen de spinner
             .spinner-img {
                 position: absolute;
@@ -193,10 +363,7 @@ $color_link: #00c853;
                 opacity: 0.3;
                 transition: all 0.3s ease-in-out;
 
-                &:hover {
-                    opacity: 1;
-                    transform: scale(1.2) rotateZ(360deg);
-                }
+                &:hover {}
             }
 
             //icono 
@@ -204,6 +371,8 @@ $color_link: #00c853;
                 width: 100%;
                 height: auto;
                 object-fit: contain;
+
+
             }
         }
 
@@ -244,6 +413,7 @@ $color_link: #00c853;
             flex-direction: row;
             align-items: center;
             width: 500px;
+            margin-right: 150px;
 
             img {
                 z-index: 1;
@@ -700,7 +870,7 @@ footer {
                     p {
                         text-decoration: none;
                         text-align: left;
-                        color: black;
+                        color: white;
                         margin: 0;
                         padding: 0;
                         display: none;
@@ -1116,64 +1286,20 @@ footer {
 @media screen and (max-width: 900px) {
     .nav-bg {
 
+        height: auto;
 
-        .nav {
+        .nav.navdesktop {
+            display: none;
+        }
 
-            padding: 0.5rem 0.5rem;
-
-            .redes-sociales {
-
-                top: -25%;
-                right: 10%;
-
-                .nav-item {
-
-
-                    a {
-
-
-                        img {}
-                    }
-                }
-            }
+        .nav.navmobile {
+            display: flex;
 
             .nav-links {
-
-
-                .nav-item {
-
-
-                    .vr {}
-
-                    a {
-
-                        font-size: 0.9rem;
-                    }
-
-                    button {
-
-                        font-size: 0.9rem;
-
-                    }
-
-                }
+                visibility: hidden;
             }
-
-            .Logo-link {
-                width: 110px;
-                height: 110px;
-                display: flex;
-                margin: 0;
-                padding: 0;
-
-                .logo-coope-home {
-                    width: 100%;
-                    height: auto;
-                    object-fit: contain;
-                }
-            }
-
         }
+
     }
 
     .payment-method-container {
@@ -1211,7 +1337,7 @@ footer {
 
 
         .optional-text {
-            width: 50%;
+            width: 80%;
 
 
             a {}
@@ -1374,6 +1500,7 @@ footer {
                 flex-direction: row;
                 align-items: center;
                 width: 400px;
+                margin-right: 50px;
 
                 img {
                     z-index: 1;
@@ -1499,10 +1626,553 @@ footer {
             }
         }
     }
+
+    .lambada {
+
+
+        h1 {
+            border-top: 2px solid white;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 4rem;
+            border-bottom: 2px solid white;
+
+        }
+    }
+
+    //PIE DE PAGINA
+    footer {
+
+
+        .img-container {
+
+
+            img {
+                width: 75%;
+
+            }
+        }
+
+        .hr {
+            width: 80%;
+            border-top: 2px solid white;
+            margin: 1rem 0;
+        }
+
+        .link-list-footer {
+
+
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-left: 0;
+
+            li {
+                position: relative;
+                list-style: none;
+
+                ul {
+
+
+                    li {
+                        font-size: 0.9rem;
+
+                        &::before {
+                            content: "»";
+                            position: absolute;
+                            left: -1rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 //tablet
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+
+
+    .nav-bg {
+
+
+        .nav {
+
+            padding: 0.5rem 0.5rem;
+
+            .redes-sociales {
+
+                top: -25%;
+                right: 10%;
+
+                .nav-item {
+
+
+                    a {
+
+
+                        img {}
+                    }
+                }
+            }
+
+            .nav-links {
+
+
+                .nav-item {
+
+
+                    .vr {
+                        width: 1px;
+                    }
+
+                    a {
+
+                        font-size: .8rem;
+                    }
+
+                    button {
+
+                        font-size: .8rem;
+
+                    }
+
+                }
+            }
+
+            .Logo-link {
+                width: 110px;
+                height: 110px;
+                display: flex;
+                margin: 0;
+                padding: 0;
+
+                .logo-coope-home {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+
+        }
+    }
+
+    .contact-form {
+        width: 90%;
+
+
+        .optional-text {
+            width: 80%;
+
+
+            a {}
+        }
+
+        .background-form {
+            width: 90%;
+            height: auto;
+
+
+            flex-direction: row-reverse;
+
+
+            form {
+                padding: 1.5rem 0;
+                width: 90%;
+
+
+                .input-item {
+
+
+                    button {
+
+
+                        &:hover {}
+                    }
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+
+                    }
+
+                    label {
+
+                        height: 30px;
+
+                        padding-left: 1rem;
+
+                        padding-right: 1rem;
+
+                        min-width: 20rem;
+
+                        input {
+                            border: none;
+
+                        }
+                    }
+
+                    &:nth-child(3) {}
+
+                    .label-ta {
+
+                        height: auto;
+
+
+                        textarea {
+                            border: none;
+                            width: 100%;
+                            height: auto;
+
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //CONTACTO
+    .contenedor-contacto {
+        width: 90%;
+
+        .contenedor-info {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                color: $color_link;
+                font-weight: bold;
+
+            }
+
+            ul {
+
+
+                li {
+
+
+
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+
+                    }
+
+                    .contacto-info-item {
+                        display: flex;
+                        padding: 0.5rem;
+                        padding-left: 4rem;
+                        padding-right: 2rem;
+                        background-color: #00c853;
+                        left: 25px;
+                        z-index: 0;
+                        border-radius: 50px;
+
+
+                        h3,
+                        a,
+                        p {}
+
+                        h3 {
+                            font-weight: bold;
+                        }
+                    }
+
+                    &:hover {
+                        .contacto-info-item {
+                            width: 15rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contenedor-img-chat {
+
+
+            img {
+                width: 110px;
+                height: auto;
+                object-fit: contain;
+
+                &:nth-child(2) {
+                    position: absolute;
+                    top: 25%;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .Follow-Us-container {
+
+
+        .title-group {
+
+
+            h2 {
+
+                font-size: 3rem;
+
+                font-weight: bold;
+            }
+
+            p {
+                text-transform: uppercase;
+            }
+        }
+
+        .social-media-container {
+            ul {
+
+
+                li {
+
+
+                    a {
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        margin: 0 0.5rem;
+
+                        img {}
+                    }
+                }
+            }
+        }
+    }
+
+    #spinner {
+
+        flex-wrap: wrap;
+
+        .nav-item {
+
+
+            .nav-link {
+
+                display: flex;
+                width: 90px;
+                height: auto;
+                padding: 0.9rem;
+                position: relative;
+
+                //imagen de spinner
+                .spinner-img {
+
+
+                    &:hover {}
+                }
+
+                //icono 
+                img {}
+            }
+
+            h2 {
+                font-size: 1.1rem;
+
+
+            }
+
+            .bis {}
+        }
+    }
+
+    #eficiencia-energetica {
+
+
+
+
+        .lampTitle {
+
+
+
+            h1 {
+                font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                color: $color_link;
+                z-index: 1;
+                width: 50%;
+                text-align: center;
+            }
+
+            .esquina-img-lamp {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 0;
+                width: 50%;
+            }
+
+            img {
+                width: 50%
+            }
+        }
+    }
+
+    .redes-efiener {
+
+
+        .nav-item {
+
+            a {
+                display: flex;
+                width: 80px;
+                height: 80px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    footer {
+
+
+        .img-container {
+
+            justify-content: center;
+
+            img {
+                width: 60%;
+
+            }
+        }
+
+        .hr {
+            width: 80%;
+            border-top: 2px solid white;
+            margin: 1rem 0;
+        }
+
+        .link-list-footer {
+
+
+
+
+            li {
+                position: relative;
+                list-style: none;
+
+                ul {
+
+
+                    li {
+                        font-size: 0.9rem;
+
+                        &::before {
+                            content: "»";
+                            position: absolute;
+                            left: -1rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    //ARTICULO
+    #card-novedades {
+
+
+        .card {
+            height: auto;
+            flex-direction: column;
+
+            //ARTICULOS PARES 2-4-6-8-...
+            &:nth-child(even) {
+                flex-direction: column;
+
+                .card-img-top {
+                    width: 100%;
+                    height: 150px;
+                }
+
+                img {
+
+                    border-left: 3rem solid $color_link;
+                    border-right: none;
+                    width: 100%;
+
+
+                }
+
+                .card-body {
+
+
+
+
+
+                    color: $color_link;
+
+                    position: relative;
+
+                    .card-title {
+
+
+                        text-align: end;
+
+                    }
+
+                    .card-text {
+
+                        text-align: end;
+
+                    }
+
+                    .nav-item {
+
+                        text-align: start;
+
+                        img {
+                            border-left: none;
+                        }
+
+                        margin-left: auto;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+
+                object-fit: cover;
+                position: relative;
+                border-right: 3rem solid $color_link;
+
+            }
+
+            .card-body {
+
+
+
+
+                .card-title {}
+
+                .card-text {}
+
+                .nav-item {
+
+                    img {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //mobile
 @media screen and (max-width: 400px) {}
