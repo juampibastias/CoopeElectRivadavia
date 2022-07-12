@@ -58,6 +58,9 @@ window.addEventListener("scroll",()=>{
                 <Dropdown.Item href="../ResponsabilidadSocial">
                   RESPONSABILIDAD SOCIAL
                 </Dropdown.Item>
+                <Dropdown.Item href="../PreguntasFrecuentes">
+                  Preguntas Frecuentes
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav.Item>
