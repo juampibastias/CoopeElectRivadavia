@@ -12,6 +12,7 @@ import MedioDePago from "./pages/mediosdepago";
 import Subsidios from "./pages/subsidios";
 import Venta from "./pages/venta";
 import Internet from "./pages/internet";
+import PreguntasFrecuentes from "./pages/preguntasFrecuentes";
 
 
 import "./App.css";
@@ -42,6 +43,7 @@ function App() {
           <Route path="/Concesion" element={<Concesion />} />
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/ResponsabilidadSocial" element={<ResponsabilidadSocial />} />
+          <Route path="/PreguntasFrecuentes" element={<PreguntasFrecuentes />} />
          
 
          

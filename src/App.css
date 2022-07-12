@@ -1400,6 +1400,9 @@ footer .link-list-footer li ul li::before {
   .nav-bg .nav.navmobile .nav-links {
     visibility: hidden;
   }
+  .payment-method-container h1 {
+    font-size: 2.5rem;
+  }
   .payment-method-container .payment-method-content {
     width: 70%;
     text-align: center;
@@ -1625,6 +1628,9 @@ footer .link-list-footer li ul li::before {
     position: absolute;
     left: -1rem;
   }
+  .banner .banner-text h4 {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1661,12 +1667,13 @@ footer .link-list-footer li ul li::before {
   }
   .contact-form {
     width: 90%;
+    margin: 10px auto;
   }
   .contact-form .optional-text {
     width: 80%;
   }
   .contact-form .background-form {
-    width: 90%;
+    width: 100%;
     height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -1675,7 +1682,10 @@ footer .link-list-footer li ul li::before {
   }
   .contact-form .background-form form {
     padding: 1.5rem 0;
-    width: 90%;
+    width: 100%;
+  }
+  .contact-form .background-form form .input-item {
+    padding-left: 1rem;
   }
   .contact-form .background-form form .input-item img {
     width: 30px;
@@ -1749,15 +1759,15 @@ footer .link-list-footer li ul li::before {
     right: 0;
   }
   .Follow-Us-container .title-group h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
   .Follow-Us-container .title-group p {
     text-transform: uppercase;
   }
   .Follow-Us-container .social-media-container ul li a {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1889,6 +1899,182 @@ footer .link-list-footer li ul li::before {
   }
   #card-novedades .card .card-body .nav-item img {
     border-right: none;
+  }
+  #novedades-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-top: 4rem;
+  }
+  #novedades-title .novedades-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  #novedades-title .novedades-title a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 250px;
+    margin-right: 50px;
+  }
+  #novedades-title .novedades-title a img {
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #novedades-title .novedades-title a h1 {
+    color: white;
+    background-color: #00c853;
+    padding: 0.4rem;
+    position: absolute;
+    right: -50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.8rem;
+    z-index: 0;
+    margin-bottom: 0;
+    border-radius: 10px;
+  }
+  .banner {
+    height: 50vh;
+  }
+  .banner .banner-text h4 {
+    width: 90%;
+  }
+  .lambada h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer .img-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .img-container img {
+    width: 60%;
+  }
+  footer .hr {
+    width: 80%;
+    border-top: 2px solid white;
+    margin: 1rem 0;
+  }
+  footer .link-list-footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .link-list-footer li {
+    position: relative;
+    list-style: none;
+  }
+  footer .link-list-footer li ul li {
+    font-size: 0.9rem;
+  }
+  footer .link-list-footer li ul li::before {
+    content: "»";
+    position: absolute;
+    left: -1rem;
+  }
+  .banner .banner-text h4 {
+    width: 100%;
+  }
+  .banner .banner-text h4 a {
+    word-break: break-all;
+  }
+  .contact-form {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .contact-form .optional-text {
+    width: 100%;
+  }
+  .contact-form .background-form {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .contact-form .background-form form {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .contact-form .background-form form .input-item {
+    padding-left: 1rem;
+  }
+  .contact-form .background-form form .input-item img {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-form .background-form form .input-item label {
+    height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 10rem;
+  }
+  .contact-form .background-form form .input-item label input {
+    border: none;
+  }
+  .contact-form .background-form form .input-item .label-ta {
+    height: auto;
+  }
+  .contact-form .background-form form .input-item .label-ta textarea {
+    border: none;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .Follow-Us-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Follow-Us-container .title-group h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .Follow-Us-container .title-group p {
+    text-transform: uppercase;
+  }
+  .Follow-Us-container .social-media-container ul li a {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0.5rem;
   }
 }
 /*# sourceMappingURL=App.css.map */
