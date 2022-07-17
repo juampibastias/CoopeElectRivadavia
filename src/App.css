@@ -79,6 +79,32 @@ p {
   font-weight: 800;
 }
 
+.contenedor-responsabilidadsocial .responsabilidad-content {
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+.contenedor-responsabilidadsocial .responsabilidad-content h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4eaa03;
+  margin-bottom: 2rem;
+}
+
+.contenedor-responsabilidadsocial .responsabilidad-content p {
+  font-size: 1.3rem;
+}
+
+.contenedor-responsabilidadsocial .responsabilidad-content li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contenedor-responsabilidadsocial .responsabilidad-content a {
+  font-size: 1.3rem;
+  color: black;
+}
+
 .contenedor-cortesprogramados .cortesprogramados-contenido {
   width: 80%;
   margin: 0 auto;

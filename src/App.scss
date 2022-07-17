@@ -82,6 +82,31 @@ $green_lighter: #72cb10;
 
     }
 }
+//pagina responsabilidad social
+.contenedor-responsabilidadsocial{
+.responsabilidad-content{
+    width: 80%;
+    margin: 1.5rem auto;
+    h3{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $green_darker;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+
+    }
+    li{
+        font-size: 1.2rem;
+       margin-bottom: 0.5rem;
+    }
+    a{
+        font-size: 1.3rem;
+        color:black;
+    }
+}
+}
 
 //cortes programados
 .contenedor-cortesprogramados {
