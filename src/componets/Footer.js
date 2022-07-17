@@ -14,11 +14,13 @@ const Footer = () => {
             <h5>INFO DE INTERES</h5>
 
             <ul>
-              <li>MEDIOS DE PAGO</li>
-              <li>IMPRIMI TU FACTURA</li>
-              <li>CORTE DE ENERGIA</li>
-              <li>HORARIOS DE ATENCION</li>
-              <li>INTERNET</li>
+              <li><a href="/medios-de-pago">MEDIOS DE PAGO</a></li>
+              <li><a href="/descargafactura">IMPRIMI TU FACTURA</a></li>
+              <li><a href="/cortes-programados">CORTE DE ENERGIA</a></li>
+              <li><a href="/contacto">HORARIOS DE ATENCION</a></li>
+              <li><a href="/one-internet">INTERNET</a></li>
+              <li><a href="/lacooperativa">LA COOPERATIVA</a></li>
+              <li><a href="/ResponsabilidadSocial">RESPONSABILIDAD SOCIAL</a></li>
             </ul>
           </li>
 
@@ -26,26 +28,26 @@ const Footer = () => {
             <h5>CONTACTO</h5>
 
             <ul>
-              <li>GUARDIA</li>
-              <li>WHATSAPP</li>
-              <li>SALON DE VENTAS</li>
-              <li>CORREO</li>
+              <li><a href="/contacto">GUARDIA</a></li>
+              <li><a href="/contacto">WHATSAPP</a></li>
+              <li><a href="/contacto">SALÓN DE VENTAS</a></li>
+             <li> <a href="/contacto">CORREO</a></li>
             </ul>
           </li>
 
           <li>
             <h5>PREGUNTAS FRECUENTES</h5>
             <ul>
-              <li>CAMBIO DE TITULARIDAD</li>
-              <li>NUEVO MEDIDOR</li>
-              <li>TARIFA SOCIAL</li>
-              <li>ELECTRODEPENDIENTES</li>
-              <li>FACTURA VENCIDA</li>
-              <li>ALUMBRADO PUBLICO</li>
+             <li> <a href="/PreguntasFrecuentes">CAMBIO DE TITULARIDAD</a></li>
+              <li><a href="/PreguntasFrecuentes">NUEVO MEDIDOR</a></li>
+             <li> <a href="/PreguntasFrecuentes">TARIFA SOCIAL</a></li>
+              <li><a href="/PreguntasFrecuentes">ELECTRODEPENDIENTES</a></li>
+              <li><a href="/PreguntasFrecuentes">FACTURA VENCIDA</a></li>
+             <li> <a href="/PreguntasFrecuentes">ALUMBRADO PUBLICO</a></li>
             </ul>
           </li>
         </ul>
-        <p>Copyright © All Rights Reserved</p>
+        <p className="copyright">Copyright © All Rights Reserved</p>
       </footer>
     </div>
   );

@@ -1,13 +1,8 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+
 const PaymentPage =()=>{
 
-    const navigate = useNavigate();
-    const location = useLocation();
-    
-    const navigateToImage =()=>{
-        window.location.href("../../../FACTURA1 (1).jpg");
-    }
+  
     return(
         <div className="contenedor-paymentpage">
             <h3>¿Como hacer un cálculo aproximado del consumo de energía eléctrica?</h3>

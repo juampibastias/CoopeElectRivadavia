@@ -181,7 +181,8 @@ $green_lighter: #72cb10;
             padding-top: 1.5rem;
             display: flex;
             flex-direction: column;
-            button{
+
+            button {
                 width: 60%;
                 background-color: $green_darker;
                 color: white;
@@ -191,10 +192,12 @@ $green_lighter: #72cb10;
                 border-radius: 5px;
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     background-color: $green_lighter;
                 }
             }
+
             .item {
                 margin: 1rem 0;
 
@@ -224,6 +227,7 @@ $green_lighter: #72cb10;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
     h3 {
         font-size: 2.5rem;
         font-weight: bold;
@@ -235,7 +239,8 @@ $green_lighter: #72cb10;
         font-size: 1.5rem;
 
     }
-    img{
+
+    img {
         width: 100%;
         object-fit: contain;
         object-position: center;
@@ -855,12 +860,18 @@ $green_lighter: #72cb10;
 
 //PIE DE PAGINA
 footer {
+
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: gray;
     justify-content: center;
     align-items: center;
+
+    .copyright {
+        color: white;
+        font-size: 1.2rem;
+    }
 
     .img-container {
         width: 300px;
@@ -898,8 +909,74 @@ footer {
                         left: -1rem;
                     }
                 }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
 
+        }
+    }
+}
+
+//pagina venta
+.contenedor-venta {
+    .venta-content {
+
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        .venta-items {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 3rem;
+                font-weight: bold;
+                color: $green_darker;
+            }
+
+            .items-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                flex-wrap: wrap;
+
+                .venta-item {
+                    width: 250px;
+                    height: 250px;
+                    background-color: lightgreen;
+                    margin: 1rem;
+                    margin-left: 0;
+                   
+                }
+            }
+        }
+        .cotizar{
+            margin-top: 3rem;
+            h3 {
+                font-size: 3rem;
+                font-weight: bold;
+                color: $green_darker;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+            .contact-form{
+                width: 100%;
+                .optional-text{
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -1125,7 +1202,7 @@ footer {
                     width: 100px;
                     height: 100px;
                     object-fit: contain;
-                    z-index: 1;
+                    z-index: 12;
                 }
 
                 .contacto-info-item {
@@ -1140,7 +1217,7 @@ footer {
                     padding-right: 2rem;
                     background-color: #00c853;
                     left: 25px;
-                    z-index: 0;
+                    z-index: 10;
                     border-radius: 50px;
                     transition: all 0.2s ease-in-out;
 
@@ -1273,6 +1350,11 @@ footer {
 
                     input {
                         border: none;
+                        width: 100%;
+
+                        &:focus {
+                            outline: none;
+                        }
 
                     }
                 }
@@ -1292,6 +1374,10 @@ footer {
                         height: auto;
                         resize: both;
                         padding: 0.5rem;
+
+                        &:focus {
+                            outline: none;
+                        }
                     }
                 }
             }
@@ -1356,33 +1442,38 @@ footer {
     width: 100%;
 }
 
-.contenedor-oneinternet{
-    .oneinternet-content{
+.contenedor-oneinternet {
+    .oneinternet-content {
         width: 80%;
         margin: 1.5rem auto;
-        p{
+
+        p {
             font-size: 1.5rem;
-            
+
         }
-        a{
+
+        a {
             color: black;
             text-decoration: underline;
         }
-        .links-onepage{
+
+        .links-onepage {
             display: flex;
             flex-direction: row;
             align-items: center;
-            .link-name{
+
+            .link-name {
                 color: $green_darker;
                 font-weight: bold;
                 font-size: 2rem;
                 margin-left: 1rem;
                 text-decoration: none;
             }
-            .btn-oneinternet{
+
+            .btn-oneinternet {
                 background-color: #06a548;
                 border: none;
-              text-decoration: none;
+                text-decoration: none;
                 height: 2rem;
                 min-width: 150px;
                 margin: 0;
@@ -1395,9 +1486,9 @@ footer {
                 color: white;
                 font-weight: bold;
                 text-transform: uppercase;
-    
-                &::after{
-                    content:">>";
+
+                &::after {
+                    content: ">>";
                     display: flex;
                     align-items: center;
                     background-color: #00c853;
@@ -1405,11 +1496,11 @@ footer {
                     height: 100%;
                     padding: 0 0.5rem;
                     margin-left: 1rem;
-                    
+
                 }
             }
         }
-        
+
     }
 }
 
@@ -2140,40 +2231,37 @@ footer {
 
         }
     }
+
     //buscador Facturas
-.contenedor-buscadorfactura {
+    .contenedor-buscadorfactura {
 
-    width: 100%;
+        width: 100%;
 
 
-    .contenedor-itembuscador {
-      
+        .contenedor-itembuscador {
 
-        .factura-img {
-           
 
-            img {
-              
+            .factura-img {
+
+
+                img {}
             }
-        }
 
-        form {
-           
+            form {
 
-            .item {
-             
 
-                label {
-                  
+                .item {
 
-                    input {
-                    
+
+                    label {
+
+
+                        input {}
                     }
                 }
             }
         }
     }
-}
 
     //PIE DE PAGINA
     footer {
@@ -2503,7 +2591,7 @@ footer {
                     img {
                         width: 70px;
                         height: 70px;
-
+                        z-index: 11;
                     }
 
                     .contacto-info-item {
@@ -2513,7 +2601,7 @@ footer {
                         padding-right: 2rem;
                         background-color: #00c853;
                         left: 25px;
-                        z-index: 0;
+
                         border-radius: 50px;
 
 
@@ -2879,13 +2967,13 @@ footer {
 
     }
 
-    .contenedor-oneinternet{
-        .oneinternet-content{
+    .contenedor-oneinternet {
+        .oneinternet-content {
             width: 95%;
-           
-            p{
+
+            p {
                 font-size: 1.5rem;
-                
+
             }
         }
     }
@@ -3058,126 +3146,133 @@ footer {
         }
     }
 
-        //buscador Facturas
-.contenedor-buscadorfactura {
+    //buscador Facturas
+    .contenedor-buscadorfactura {
 
-    width: 100%;
-    flex-direction: column;
+        width: 100%;
+        flex-direction: column;
 
-    .contenedor-itembuscador {
-      width: 90%;
-        text-align: center;
-        .factura-img {
-           
+        .contenedor-itembuscador {
+            width: 90%;
+            text-align: center;
 
-            img {
-              
+            .factura-img {
+
+
+                img {}
             }
-        }
 
-        form {
-           
-            
-            button{
-                width: 100%;
-            }
-            .item {
-             
+            form {
 
-                label {
+
+                button {
                     width: 100%;
+                }
 
-                    input {
-                   
+                .item {
+
+
+                    label {
+                        width: 100%;
+
+                        input {}
                     }
                 }
             }
         }
     }
-}
-//contendio pago facturas
-.contenedor-paymentpage {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $green_darker;
-    }
 
-    p {
-        text-indent: 50px;
-        font-size: 1.2rem;
-
-    }
-    img{
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
+    //contendio pago facturas
+    .contenedor-paymentpage {
+        width: 90%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $green_darker;
+        }
+
+        p {
+            text-indent: 50px;
+            font-size: 1.2rem;
+
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+            margin: 0 auto;
+        }
     }
-}
-.contenedor-oneinternet{
-    .oneinternet-content{
-        width: 100%;
-        margin: 1.5rem auto;
-        p{
-            font-size: 1.5rem;
-            
-        }
-        a{
-            color: black;
-            text-decoration: underline;
-        }
-        .links-onepage{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            .link-name{
-                color: $green_darker;
-                font-weight: bold;
-                font-size: 1.6rem;
-                margin-left: 1rem;
-                text-decoration: none;
+
+    .contenedor-oneinternet {
+        .oneinternet-content {
+            width: 100%;
+            margin: 1.5rem auto;
+
+            p {
+                font-size: 1.5rem;
+
             }
-            .btn-oneinternet{
-                background-color: #06a548;
-                border: none;
-              text-decoration: none;
-                height: 2rem;
-                min-width: 150px;
-                margin: 0;
+
+            a {
+                color: black;
+                text-decoration: underline;
+            }
+
+            .links-onepage {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 align-items: center;
-                text-align: center;
-                padding-left: 1rem;
-                justify-content: space-between;
-                color: white;
-                font-weight: bold;
-                text-transform: uppercase;
-    
-                &::after{
-                    content:">>";
-                    display: flex;
-                    align-items: center;
-                    background-color: #00c853;
-                    width: max-content;
-                    height: 100%;
-                    padding: 0 0.5rem;
+
+                .link-name {
+                    color: $green_darker;
+                    font-weight: bold;
+                    font-size: 1.6rem;
                     margin-left: 1rem;
-                    
+                    text-decoration: none;
+                }
+
+                .btn-oneinternet {
+                    background-color: #06a548;
+                    border: none;
+                    text-decoration: none;
+                    height: 2rem;
+                    min-width: 150px;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    padding-left: 1rem;
+                    justify-content: space-between;
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    &::after {
+                        content: ">>";
+                        display: flex;
+                        align-items: center;
+                        background-color: #00c853;
+                        width: max-content;
+                        height: 100%;
+                        padding: 0 0.5rem;
+                        margin-left: 1rem;
+
+                    }
                 }
             }
+
         }
-        
     }
-}
 
 }
 

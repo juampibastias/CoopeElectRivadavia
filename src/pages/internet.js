@@ -1,7 +1,7 @@
 import React from "react";
 
 import BannerTitle from "../componets/bannertitle";
-import imgBanner from "../images/banner2.png";
+
 const Internet =()=>{
     return(
         <div className="contenedor-oneinternet">
