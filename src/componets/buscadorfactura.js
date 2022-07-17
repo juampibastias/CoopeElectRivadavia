@@ -15,15 +15,16 @@ const BuscadorFactura=()=>{
                 <form>
                 <div className="item">
                     <label>Número de socio
-                    <input type="number" />
+                    <input placeholder="ej: 0000424" type="number" />
                     </label>
                   
                 </div>
                 <div className="item">
                    <label>Número de suministro
-                   <input type="number" />
+                   <input placeholder="ej: 000001" type="number" />
                    </label>
                 </div>
+                <button type="submit">Buscar</button>
                 </form>
             </div>
            

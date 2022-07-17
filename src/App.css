@@ -132,6 +132,156 @@ p {
   font-weight: bold;
 }
 
+.contenedor-buscadorfactura {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador .factura-img {
+  padding-top: 1.5rem;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador .factura-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador form {
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador form button {
+  width: 60%;
+  background-color: #4eaa03;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador form button:hover {
+  background-color: #72cb10;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador form .item {
+  margin: 1rem 0;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador form .item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contenedor-buscadorfactura .contenedor-itembuscador form .item label input {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+}
+
+.contenedor-paymentpage {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contenedor-paymentpage h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4eaa03;
+}
+
+.contenedor-paymentpage p {
+  text-indent: 50px;
+  font-size: 1.5rem;
+}
+
+.contenedor-paymentpage img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0 auto;
+}
+
 .nav-bg {
   background-color: #c7eb7a;
   display: -webkit-box;
@@ -1829,6 +1979,9 @@ footer .link-list-footer li ul li::before {
     font-size: 4rem;
     border-bottom: 2px solid white;
   }
+  .contenedor-buscadorfactura {
+    width: 100%;
+  }
   footer .img-container img {
     width: 75%;
   }
@@ -2353,6 +2506,57 @@ footer .link-list-footer li ul li::before {
     border: 1px solid white;
     padding: 0.5rem;
     font-weight: bold;
+  }
+  .contenedor-buscadorfactura {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-buscadorfactura .contenedor-itembuscador {
+    width: 90%;
+    text-align: center;
+  }
+  .contenedor-buscadorfactura .contenedor-itembuscador form button {
+    width: 100%;
+  }
+  .contenedor-buscadorfactura .contenedor-itembuscador form .item label {
+    width: 100%;
+  }
+  .contenedor-paymentpage {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contenedor-paymentpage h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4eaa03;
+  }
+  .contenedor-paymentpage p {
+    text-indent: 50px;
+    font-size: 1.2rem;
+  }
+  .contenedor-paymentpage img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+    margin: 0 auto;
   }
 }
 

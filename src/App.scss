@@ -71,51 +71,59 @@ $green_lighter: #72cb10;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background-position: center;
     background-size: cover;
-    .bannertitle-title{
+
+    .bannertitle-title {
         color: rgba($color: white, $alpha: 0.5);
         font-size: 10vh;
         font-weight: 800;
-        
+
     }
 }
 
 //cortes programados
-.contenedor-cortesprogramados{
-    .cortesprogramados-contenido{
+.contenedor-cortesprogramados {
+    .cortesprogramados-contenido {
         width: 80%;
         margin: 0 auto;
-        p{
+
+        p {
             text-indent: 50px;
             font-size: 1.5rem;
-            
+
         }
-        h2{
+
+        h2 {
             font-size: 2.5rem;
             font-weight: 800;
             margin: 1.2rem 0;
             color: #06a548;
         }
-        article{
+
+        article {
             background-color: $green_darker;
             padding: 1.2rem;
             margin: 2rem auto;
             height: auto;
-            h2{
+
+            h2 {
                 font-size: 2.5rem;
                 font-weight: 800;
                 margin: 1.2rem 0;
                 color: white;
             }
-            table{
+
+            table {
                 width: 100%;
                 border-collapse: collapse;
-                thead{
-                    tr{
+
+                thead {
+                    tr {
                         background-color: white;
-                        td{
+
+                        td {
                             border: 1px solid $green_darker;
                             color: #06a548;
                             font-weight: bold;
@@ -123,8 +131,9 @@ $green_lighter: #72cb10;
                         }
                     }
                 }
-                tr{
-                    td{
+
+                tr {
+                    td {
                         border: 1px solid white;
                         padding: 0.5rem;
                         font-weight: bold;
@@ -132,6 +141,105 @@ $green_lighter: #72cb10;
                 }
             }
         }
+    }
+}
+
+//buscador Facturas
+.contenedor-buscadorfactura {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+
+    .contenedor-itembuscador {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .factura-img {
+            padding-top: 1.5rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+                max-height: 300px;
+                object-position: left;
+            }
+        }
+
+        form {
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            button{
+                width: 60%;
+                background-color: $green_darker;
+                color: white;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: $green_lighter;
+                }
+            }
+            .item {
+                margin: 1rem 0;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+
+                    input {
+                        border-radius: 10px;
+                        border: 1px solid rgba(0, 0, 0, 0.2);
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//contendio pago facturas
+.contenedor-paymentpage {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $green_darker;
+    }
+
+    p {
+        text-indent: 50px;
+        font-size: 1.5rem;
+
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
     }
 }
 
@@ -854,14 +962,16 @@ footer {
             font-size: 3.5rem;
             font-weight: bolder;
         }
-        h2{
+
+        h2 {
             color: $green_darker;
             font-size: 2.8rem;
             font-weight: lighter;
         }
-        hr{
-            width:40%;
-            height:15px;
+
+        hr {
+            width: 40%;
+            height: 15px;
             color: $green_darker;
             opacity: 1;
             margin: 0;
@@ -870,7 +980,8 @@ footer {
 }
 
 .contenedor-accordionelement {
-margin-top: 2rem;
+    margin-top: 2rem;
+
     .accordion {
         margin: 1.5rem 0;
 
@@ -1250,67 +1361,58 @@ margin-top: 2rem;
     .nav-bg {
 
         .nav.navdesktop {
-           
-    
+
+
             .redes-sociales {
-               
+
                 .nav-item {
-    
-    
+
+
                     a {
-                       
-    
-                        img {
-                           
-                        }
+
+
+                        img {}
                     }
                 }
             }
-    
+
             .nav-links {
-               
-    
+
+
                 .nav-item {
-                   
+
                     .dropdown {
                         .dropdown-toggle {
-                            &:focus {
-                               
-                            }
+                            &:focus {}
                         }
-    
-                        .dropdown-menu {
-                        
-                        }
+
+                        .dropdown-menu {}
                     }
-    
-                    .vr {
-                     
-                    }
-    
+
+                    .vr {}
+
                     a {
                         font-size: 1.1rem;
                     }
-    
+
                     button {
                         font-size: 1.1rem;
-                       
+
                     }
-    
+
                 }
             }
-    
+
             .Logo-link {
-              
-    
-                .logo-coope-home {
-                  
-                }
+
+
+                .logo-coope-home {}
             }
-    
-    
-    
+
+
+
         }
+
         .nav {
 
 
@@ -1529,100 +1631,96 @@ margin-top: 2rem;
         }
 
     }
+
     //Accordion precuentes frecuentes
-.contenedor-faq {
-  
-    flex-direction: column;
-    width: 70%;
-    margin: 0 auto;
+    .contenedor-faq {
 
-    .contenedor-titlefaq {
-    
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: left;
+        width: 70%;
+        margin: 0 auto;
 
-        h1 {
-        
-            font-size: 3.5rem;
-         
-        }
-        h2{
-        
-            font-size: 2.8rem;
-      
-        }
-        hr{
-            width:40%;
-            height:15px;
-      
-            opacity: 1;
-            margin: 0;
-        }
-    }
-}
+        .contenedor-titlefaq {
 
-.contenedor-accordionelement {
-margin-top: 2rem;
-    .accordion {
-        margin: 1.5rem 0;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
 
-        &:nth-child(even) {
-            .accordion-item {
-               
+            h1 {
 
-                .accordion-button {
-            
-                }
+                font-size: 3.5rem;
 
             }
-        }
 
-        &:nth-child(odd) {
-            .accordion-item {
-             
+            h2 {
 
-                .accordion-button {
-                 
-                }
+                font-size: 2.8rem;
 
             }
-        }
 
-        .accordion-body {
-        
+            hr {
+                width: 40%;
+                height: 15px;
 
-            li,
-            p,
-            h3,
-            h4 {
-              
-            }
-
-            p {
-                font-size: 1.2rem;
+                opacity: 1;
                 margin: 0;
             }
+        }
+    }
 
-            li {
-             
-                margin-left: 1rem;
+    .contenedor-accordionelement {
+        margin-top: 2rem;
+
+        .accordion {
+            margin: 1.5rem 0;
+
+            &:nth-child(even) {
+                .accordion-item {
+
+
+                    .accordion-button {}
+
+                }
             }
 
-        }
+            &:nth-child(odd) {
+                .accordion-item {
 
-        .accordion-button {
-         
-            font-size: 2.5rem;
-        
-            padding-left: 15%;
 
-            &::after {
-             
+                    .accordion-button {}
+
+                }
+            }
+
+            .accordion-body {
+
+
+                li,
+                p,
+                h3,
+                h4 {}
+
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+
+                li {
+
+                    margin-left: 1rem;
+                }
+
+            }
+
+            .accordion-button {
+
+                font-size: 2.5rem;
+
+                padding-left: 15%;
+
+                &::after {}
             }
         }
     }
-}
 }
 
 //laptop
@@ -1985,6 +2083,40 @@ margin-top: 2rem;
 
         }
     }
+    //buscador Facturas
+.contenedor-buscadorfactura {
+
+    width: 100%;
+
+
+    .contenedor-itembuscador {
+      
+
+        .factura-img {
+           
+
+            img {
+              
+            }
+        }
+
+        form {
+           
+
+            .item {
+             
+
+                label {
+                  
+
+                    input {
+                    
+                    }
+                }
+            }
+        }
+    }
+}
 
     //PIE DE PAGINA
     footer {
@@ -2055,96 +2187,92 @@ margin-top: 2rem;
         }
 
     }
+
     .contenedor-faq {
-  
+
         flex-direction: column;
         width: 70%;
         margin: 0 auto;
-    
+
         .contenedor-titlefaq {
-        
+
             flex-direction: column;
             justify-content: flex-start;
             align-items: left;
-    
+
             h1 {
-            
+
                 font-size: 3.5rem;
-             
+
             }
-            h2{
-            
+
+            h2 {
+
                 font-size: 2.8rem;
-          
+
             }
-            hr{
-                width:35%;
-                height:15px;
-          
+
+            hr {
+                width: 35%;
+                height: 15px;
+
                 opacity: 1;
                 margin: 0;
             }
         }
     }
-    
+
     .contenedor-accordionelement {
-    margin-top: 2rem;
+        margin-top: 2rem;
+
         .accordion {
             margin: 1.5rem 0;
-    
+
             &:nth-child(even) {
                 .accordion-item {
-                   
-    
-                    .accordion-button {
-                
-                    }
-    
+
+
+                    .accordion-button {}
+
                 }
             }
-    
+
             &:nth-child(odd) {
                 .accordion-item {
-                 
-    
-                    .accordion-button {
-                     
-                    }
-    
+
+
+                    .accordion-button {}
+
                 }
             }
-    
+
             .accordion-body {
-            
-    
+
+
                 li,
                 p,
                 h3,
-                h4 {
-                  
-                }
-    
+                h4 {}
+
                 p {
                     font-size: 1.2rem;
                     margin: 0;
                 }
-    
+
                 li {
-                 
+
                     margin-left: 1rem;
                 }
-    
+
             }
-    
+
             .accordion-button {
-             
+
                 font-size: 2.2rem;
-            
+
                 padding-left: 15%;
-    
-                &::after {
-                 
-                }
+
+                &::after {}
             }
         }
     }
@@ -2705,158 +2833,227 @@ margin-top: 2rem;
     }
 
     .contenedor-faq {
-  
+
         flex-direction: column;
-        width:80%;
+        width: 80%;
         margin: 0 auto;
-    
+
         .contenedor-titlefaq {
-        
+
             flex-direction: column;
             justify-content: flex-start;
             align-items: left;
-    
+
             h1 {
-            
+
                 font-size: 3rem;
-             
+
             }
-            h2{
-            
+
+            h2 {
+
                 font-size: 2.3rem;
-          
+
             }
-            hr{
-                width:35%;
-                height:12px;
-          
+
+            hr {
+                width: 35%;
+                height: 12px;
+
                 opacity: 1;
                 margin: 0;
             }
         }
     }
-    
+
     .contenedor-accordionelement {
-    margin-top: 2rem;
+        margin-top: 2rem;
+
         .accordion {
             margin: 1.5rem 0;
-    
+
             &:nth-child(even) {
                 .accordion-item {
-                   
-    
-                    .accordion-button {
-                
-                    }
-    
+
+
+                    .accordion-button {}
+
                 }
             }
-    
+
             &:nth-child(odd) {
                 .accordion-item {
-                 
-    
-                    .accordion-button {
-                     
-                    }
-    
+
+
+                    .accordion-button {}
+
                 }
             }
-    
+
             .accordion-body {
-            
-    
+
+
                 li,
                 p,
                 h3,
-                h4 {
-                  
-                }
-    
+                h4 {}
+
                 p {
                     font-size: 1.2rem;
                     margin: 0;
                 }
-    
+
                 li {
-                 
+
                     margin-left: 1rem;
                 }
-    
+
             }
-    
+
             .accordion-button {
-             
+
                 font-size: 1.8rem;
-            
+
                 padding-left: 5%;
-    
-                &::after {
-                 
-                }
+
+                &::after {}
             }
         }
     }
 
     .contenedor-bannertitle {
-      
-        .bannertitle-title{
-           font-size: 3rem;
-            
+
+        .bannertitle-title {
+            font-size: 3rem;
+
         }
     }
+
     //cortes programados
-.contenedor-cortesprogramados{
-    .cortesprogramados-contenido{
-        width: 90%;
-        margin: 0 auto;
-        p{
-            text-indent: 30px;
-            font-size: 1.5rem;
-            
-        }
-        h2{
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin: 1.2rem 0;
-            color: #06a548;
-        }
-        article{
-            background-color: $green_darker;
-            padding: 1.2rem;
-            margin: 2rem auto;
-            height: auto;
-            h2{
+    .contenedor-cortesprogramados {
+        .cortesprogramados-contenido {
+            width: 90%;
+            margin: 0 auto;
+
+            p {
+                text-indent: 30px;
+                font-size: 1.5rem;
+
+            }
+
+            h2 {
                 font-size: 2.5rem;
                 font-weight: 800;
                 margin: 1.2rem 0;
-                color: white;
+                color: #06a548;
             }
-            table{
-                width: 100%;
-                border-collapse: collapse;
-                thead{
-                    tr{
-                        background-color: white;
-                        td{
-                            border: 1px solid $green_darker;
-                            color: #06a548;
+
+            article {
+                background-color: $green_darker;
+                padding: 1.2rem;
+                margin: 2rem auto;
+                height: auto;
+
+                h2 {
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    margin: 1.2rem 0;
+                    color: white;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    thead {
+                        tr {
+                            background-color: white;
+
+                            td {
+                                border: 1px solid $green_darker;
+                                color: #06a548;
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                    tr {
+                        td {
+                            border: 1px solid white;
+                            padding: 0.5rem;
                             font-weight: bold;
-                            font-size: 1.2rem;
                         }
                     }
                 }
-                tr{
-                    td{
-                        border: 1px solid white;
-                        padding: 0.5rem;
-                        font-weight: bold;
+            }
+        }
+    }
+
+        //buscador Facturas
+.contenedor-buscadorfactura {
+
+    width: 100%;
+    flex-direction: column;
+
+    .contenedor-itembuscador {
+      width: 90%;
+        text-align: center;
+        .factura-img {
+           
+
+            img {
+              
+            }
+        }
+
+        form {
+           
+            
+            button{
+                width: 100%;
+            }
+            .item {
+             
+
+                label {
+                    width: 100%;
+
+                    input {
+                   
                     }
                 }
             }
         }
     }
 }
+//contendio pago facturas
+.contenedor-paymentpage {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $green_darker;
+    }
+
+    p {
+        text-indent: 50px;
+        font-size: 1.2rem;
+
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+    }
+}
+
 }
 
 //mobile
@@ -3040,127 +3237,129 @@ margin-top: 2rem;
             }
         }
     }
+
     .contenedor-faq {
-  
+
         flex-direction: column;
-        width:95%;
+        width: 95%;
         margin: 0 auto;
-    
+
         .contenedor-titlefaq {
-        
+
             flex-direction: column;
             justify-content: flex-start;
             align-items: left;
-    
+
             h1 {
-            
+
                 font-size: 3rem;
-             
+
             }
-            h2{
-            
+
+            h2 {
+
                 font-size: 2.3rem;
-          
+
             }
-            hr{
-                width:35%;
-                height:12px;
-          
+
+            hr {
+                width: 35%;
+                height: 12px;
+
                 opacity: 1;
                 margin: 0;
             }
         }
     }
-    
+
     .contenedor-accordionelement {
-    margin-top: 2rem;
+        margin-top: 2rem;
+
         .accordion {
             margin: 1.5rem 0;
-    
+
             &:nth-child(even) {
                 .accordion-item {
-                   
-    
-                    .accordion-button {
-                
-                    }
-    
+
+
+                    .accordion-button {}
+
                 }
             }
-    
+
             &:nth-child(odd) {
                 .accordion-item {
-                 
-    
-                    .accordion-button {
-                     
-                    }
-    
+
+
+                    .accordion-button {}
+
                 }
             }
-    
+
             .accordion-body {
-            
-    
+
+
                 li,
                 p,
                 h3,
-                h4 {
-                  
-                }
-    
+                h4 {}
+
                 p {
                     font-size: 1rem;
                     margin: 0;
                 }
-    
+
                 li {
                     font-size: 1rem;
                     margin-left: 1rem;
                 }
-    
+
             }
-    
+
             .accordion-button {
-             
+
                 font-size: 1.4rem;
-            
+
                 padding-left: 5%;
-    
-                &::after {
-                 
-                }
+
+                &::after {}
             }
         }
     }
+
     .contenedor-bannertitle {
-      
-        .bannertitle-title{
-           font-size: 2.5rem;
-            
+
+        .bannertitle-title {
+            font-size: 2.5rem;
+
         }
     }
-    .contenedor-cortesprogramados{
-        .cortesprogramados-contenido{
-         
-            article{
+
+    .contenedor-cortesprogramados {
+        .cortesprogramados-contenido {
+
+            article {
                 background-color: $green_darker;
                 padding: .5rem;
                 margin: 2rem auto;
                 height: auto;
-                h2{
+
+                h2 {
                     font-size: 2rem;
                     font-weight: 800;
                     margin: 1.2rem 0;
                     color: white;
                 }
-                table{
+
+                table {
                     width: 100%;
                     border-collapse: collapse;
-                    thead{
-                        tr{
+
+                    thead {
+                        tr {
                             background-color: white;
-                            td{
+
+                            td {
                                 border: 1px solid $green_darker;
                                 color: #06a548;
                                 font-weight: bold;
@@ -3168,8 +3367,9 @@ margin-top: 2rem;
                             }
                         }
                     }
-                    tr{
-                        td{
+
+                    tr {
+                        td {
                             border: 1px solid white;
                             padding: 0.5rem;
                             font-weight: bold;
@@ -3179,5 +3379,5 @@ margin-top: 2rem;
             }
         }
     }
-   
+
 }
