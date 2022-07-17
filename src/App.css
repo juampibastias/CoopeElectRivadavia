@@ -229,7 +229,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
 }
 
 .nav-bg .nav.navmobile .logotoggle-container {
@@ -897,6 +897,112 @@ footer .link-list-footer li ul li::before {
   color: white;
 }
 
+.contenedor-faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contenedor-faq .contenedor-titlefaq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.contenedor-faq .contenedor-titlefaq h1 {
+  color: #4eaa03;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.contenedor-faq .contenedor-titlefaq h2 {
+  color: #4eaa03;
+  font-size: 2.8rem;
+  font-weight: lighter;
+}
+
+.contenedor-faq .contenedor-titlefaq hr {
+  width: 40%;
+  height: 15px;
+  color: #4eaa03;
+  opacity: 1;
+  margin: 0;
+}
+
+.contenedor-accordionelement {
+  margin-top: 2rem;
+}
+
+.contenedor-accordionelement .accordion {
+  margin: 1.5rem 0;
+}
+
+.contenedor-accordionelement .accordion:nth-child(even) .accordion-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contenedor-accordionelement .accordion:nth-child(even) .accordion-item .accordion-button {
+  background-color: #4eaa03;
+}
+
+.contenedor-accordionelement .accordion:nth-child(odd) .accordion-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contenedor-accordionelement .accordion:nth-child(odd) .accordion-item .accordion-button {
+  background-color: #72cb10;
+}
+
+.contenedor-accordionelement .accordion .accordion-body {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contenedor-accordionelement .accordion .accordion-body li,
+.contenedor-accordionelement .accordion .accordion-body p,
+.contenedor-accordionelement .accordion .accordion-body h3,
+.contenedor-accordionelement .accordion .accordion-body h4 {
+  color: black;
+  font-weight: bold;
+}
+
+.contenedor-accordionelement .accordion .accordion-body p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contenedor-accordionelement .accordion .accordion-body li {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+.contenedor-accordionelement .accordion .accordion-button {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 15%;
+}
+
+.contenedor-accordionelement .accordion .accordion-button::after {
+  display: none;
+}
+
 .payment-method-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1312,6 +1418,12 @@ footer .link-list-footer li ul li::before {
 }
 
 @media screen and (max-width: 1200px) {
+  .nav-bg .nav.navdesktop .nav-links .nav-item a {
+    font-size: 1.1rem;
+  }
+  .nav-bg .nav.navdesktop .nav-links .nav-item button {
+    font-size: 1.1rem;
+  }
   .nav-bg .nav .redes-sociales {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1398,6 +1510,55 @@ footer .link-list-footer li ul li::before {
     position: absolute;
     top: 25%;
     right: 0;
+  }
+  .contenedor-faq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contenedor-faq .contenedor-titlefaq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .contenedor-faq .contenedor-titlefaq h1 {
+    font-size: 3.5rem;
+  }
+  .contenedor-faq .contenedor-titlefaq h2 {
+    font-size: 2.8rem;
+  }
+  .contenedor-faq .contenedor-titlefaq hr {
+    width: 40%;
+    height: 15px;
+    opacity: 1;
+    margin: 0;
+  }
+  .contenedor-accordionelement {
+    margin-top: 2rem;
+  }
+  .contenedor-accordionelement .accordion {
+    margin: 1.5rem 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body li {
+    margin-left: 1rem;
+  }
+  .contenedor-accordionelement .accordion .accordion-button {
+    font-size: 2.5rem;
+    padding-left: 15%;
   }
 }
 
@@ -1646,6 +1807,55 @@ footer .link-list-footer li ul li::before {
   }
   .banner .banner-text h4 {
     width: 70%;
+  }
+  .contenedor-faq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contenedor-faq .contenedor-titlefaq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .contenedor-faq .contenedor-titlefaq h1 {
+    font-size: 3.5rem;
+  }
+  .contenedor-faq .contenedor-titlefaq h2 {
+    font-size: 2.8rem;
+  }
+  .contenedor-faq .contenedor-titlefaq hr {
+    width: 35%;
+    height: 15px;
+    opacity: 1;
+    margin: 0;
+  }
+  .contenedor-accordionelement {
+    margin-top: 2rem;
+  }
+  .contenedor-accordionelement .accordion {
+    margin: 1.5rem 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body li {
+    margin-left: 1rem;
+  }
+  .contenedor-accordionelement .accordion .accordion-button {
+    font-size: 2.2rem;
+    padding-left: 15%;
   }
 }
 
@@ -1989,6 +2199,55 @@ footer .link-list-footer li ul li::before {
   .lambada h1 {
     font-size: 2.5rem;
   }
+  .contenedor-faq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contenedor-faq .contenedor-titlefaq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .contenedor-faq .contenedor-titlefaq h1 {
+    font-size: 3rem;
+  }
+  .contenedor-faq .contenedor-titlefaq h2 {
+    font-size: 2.3rem;
+  }
+  .contenedor-faq .contenedor-titlefaq hr {
+    width: 35%;
+    height: 12px;
+    opacity: 1;
+    margin: 0;
+  }
+  .contenedor-accordionelement {
+    margin-top: 2rem;
+  }
+  .contenedor-accordionelement .accordion {
+    margin: 1.5rem 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body li {
+    margin-left: 1rem;
+  }
+  .contenedor-accordionelement .accordion .accordion-button {
+    font-size: 1.8rem;
+    padding-left: 5%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -2091,6 +2350,56 @@ footer .link-list-footer li ul li::before {
     display: -ms-flexbox;
     display: flex;
     margin: 0 0.5rem;
+  }
+  .contenedor-faq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .contenedor-faq .contenedor-titlefaq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .contenedor-faq .contenedor-titlefaq h1 {
+    font-size: 3rem;
+  }
+  .contenedor-faq .contenedor-titlefaq h2 {
+    font-size: 2.3rem;
+  }
+  .contenedor-faq .contenedor-titlefaq hr {
+    width: 35%;
+    height: 12px;
+    opacity: 1;
+    margin: 0;
+  }
+  .contenedor-accordionelement {
+    margin-top: 2rem;
+  }
+  .contenedor-accordionelement .accordion {
+    margin: 1.5rem 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .contenedor-accordionelement .accordion .accordion-body li {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .contenedor-accordionelement .accordion .accordion-button {
+    font-size: 1.4rem;
+    padding-left: 5%;
   }
 }
 /*# sourceMappingURL=App.css.map */

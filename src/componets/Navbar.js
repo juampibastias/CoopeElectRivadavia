@@ -19,10 +19,10 @@ function ToggleMenu (){
   }
 
 window.addEventListener("scroll",()=>{
-  if(window.scrollY > window.innerHeight){
+  if(window.scrollY > window.innerHeight/2){
     document.querySelector(".navmobile").classList.add("navbar-fixed");
   }
-  if(window.scrollY < window.innerHeight){
+  if(window.scrollY < window.innerHeight/2){
     document.querySelector(".navmobile").classList.remove("navbar-fixed");
   }
 })

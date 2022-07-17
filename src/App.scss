@@ -22,6 +22,8 @@ p {
 //variables
 $color_green_light: #c7eb7a;
 $color_link: #00c853;
+$green_darker: #4eaa03;
+$green_lighter: #72cb10;
 
 
 
@@ -62,7 +64,8 @@ $color_link: #00c853;
 
     }
 }
-.contenedor-bannertitle{
+
+.contenedor-bannertitle {
     width: 100%;
     height: 50vh;
     display: flex;
@@ -199,7 +202,7 @@ $color_link: #00c853;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1;
+            z-index: 999;
         }
 
 
@@ -774,6 +777,103 @@ footer {
 
 }
 
+//Accordion precuentes frecuentes
+.contenedor-faq {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+
+    .contenedor-titlefaq {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+
+        h1 {
+            color: $green_darker;
+            font-size: 3.5rem;
+            font-weight: bolder;
+        }
+        h2{
+            color: $green_darker;
+            font-size: 2.8rem;
+            font-weight: lighter;
+        }
+        hr{
+            width:40%;
+            height:15px;
+            color: $green_darker;
+            opacity: 1;
+            margin: 0;
+        }
+    }
+}
+
+.contenedor-accordionelement {
+margin-top: 2rem;
+    .accordion {
+        margin: 1.5rem 0;
+
+        &:nth-child(even) {
+            .accordion-item {
+                background-color: rgba($color: #000000, $alpha: 0);
+
+                .accordion-button {
+                    background-color: rgba($color: $green_darker, $alpha: 1);
+                }
+
+            }
+        }
+
+        &:nth-child(odd) {
+            .accordion-item {
+                background-color: rgba($color: #000000, $alpha: 0);
+
+                .accordion-button {
+                    background-color: rgba($color: $green_lighter, $alpha: 1);
+                }
+
+            }
+        }
+
+        .accordion-body {
+            background-color: rgba($color: #000000, $alpha: 0);
+
+            li,
+            p,
+            h3,
+            h4 {
+                color: black;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            li {
+                list-style: disc;
+                margin-left: 1rem;
+            }
+
+        }
+
+        .accordion-button {
+            color: white;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-left: 15%;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
 //MEDIOS DE PAGO
 .payment-method-container {
     display: flex;
@@ -1090,7 +1190,68 @@ footer {
 @media screen and (max-width: 1200px) {
     .nav-bg {
 
-
+        .nav.navdesktop {
+           
+    
+            .redes-sociales {
+               
+                .nav-item {
+    
+    
+                    a {
+                       
+    
+                        img {
+                           
+                        }
+                    }
+                }
+            }
+    
+            .nav-links {
+               
+    
+                .nav-item {
+                   
+                    .dropdown {
+                        .dropdown-toggle {
+                            &:focus {
+                               
+                            }
+                        }
+    
+                        .dropdown-menu {
+                        
+                        }
+                    }
+    
+                    .vr {
+                     
+                    }
+    
+                    a {
+                        font-size: 1.1rem;
+                    }
+    
+                    button {
+                        font-size: 1.1rem;
+                       
+                    }
+    
+                }
+            }
+    
+            .Logo-link {
+              
+    
+                .logo-coope-home {
+                  
+                }
+            }
+    
+    
+    
+        }
         .nav {
 
 
@@ -1152,6 +1313,7 @@ footer {
             }
 
         }
+
     }
 
     //ARTICULO
@@ -1308,6 +1470,100 @@ footer {
         }
 
     }
+    //Accordion precuentes frecuentes
+.contenedor-faq {
+  
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+
+    .contenedor-titlefaq {
+    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+
+        h1 {
+        
+            font-size: 3.5rem;
+         
+        }
+        h2{
+        
+            font-size: 2.8rem;
+      
+        }
+        hr{
+            width:40%;
+            height:15px;
+      
+            opacity: 1;
+            margin: 0;
+        }
+    }
+}
+
+.contenedor-accordionelement {
+margin-top: 2rem;
+    .accordion {
+        margin: 1.5rem 0;
+
+        &:nth-child(even) {
+            .accordion-item {
+               
+
+                .accordion-button {
+            
+                }
+
+            }
+        }
+
+        &:nth-child(odd) {
+            .accordion-item {
+             
+
+                .accordion-button {
+                 
+                }
+
+            }
+        }
+
+        .accordion-body {
+        
+
+            li,
+            p,
+            h3,
+            h4 {
+              
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            li {
+             
+                margin-left: 1rem;
+            }
+
+        }
+
+        .accordion-button {
+         
+            font-size: 2.5rem;
+        
+            padding-left: 15%;
+
+            &::after {
+             
+            }
+        }
+    }
+}
 }
 
 //laptop
@@ -1739,6 +1995,99 @@ footer {
 
         }
 
+    }
+    .contenedor-faq {
+  
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    
+        .contenedor-titlefaq {
+        
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+    
+            h1 {
+            
+                font-size: 3.5rem;
+             
+            }
+            h2{
+            
+                font-size: 2.8rem;
+          
+            }
+            hr{
+                width:35%;
+                height:15px;
+          
+                opacity: 1;
+                margin: 0;
+            }
+        }
+    }
+    
+    .contenedor-accordionelement {
+    margin-top: 2rem;
+        .accordion {
+            margin: 1.5rem 0;
+    
+            &:nth-child(even) {
+                .accordion-item {
+                   
+    
+                    .accordion-button {
+                
+                    }
+    
+                }
+            }
+    
+            &:nth-child(odd) {
+                .accordion-item {
+                 
+    
+                    .accordion-button {
+                     
+                    }
+    
+                }
+            }
+    
+            .accordion-body {
+            
+    
+                li,
+                p,
+                h3,
+                h4 {
+                  
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+    
+                li {
+                 
+                    margin-left: 1rem;
+                }
+    
+            }
+    
+            .accordion-button {
+             
+                font-size: 2.2rem;
+            
+                padding-left: 15%;
+    
+                &::after {
+                 
+                }
+            }
+        }
     }
 }
 
@@ -2295,6 +2644,100 @@ footer {
 
         }
     }
+
+    .contenedor-faq {
+  
+        flex-direction: column;
+        width:80%;
+        margin: 0 auto;
+    
+        .contenedor-titlefaq {
+        
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+    
+            h1 {
+            
+                font-size: 3rem;
+             
+            }
+            h2{
+            
+                font-size: 2.3rem;
+          
+            }
+            hr{
+                width:35%;
+                height:12px;
+          
+                opacity: 1;
+                margin: 0;
+            }
+        }
+    }
+    
+    .contenedor-accordionelement {
+    margin-top: 2rem;
+        .accordion {
+            margin: 1.5rem 0;
+    
+            &:nth-child(even) {
+                .accordion-item {
+                   
+    
+                    .accordion-button {
+                
+                    }
+    
+                }
+            }
+    
+            &:nth-child(odd) {
+                .accordion-item {
+                 
+    
+                    .accordion-button {
+                     
+                    }
+    
+                }
+            }
+    
+            .accordion-body {
+            
+    
+                li,
+                p,
+                h3,
+                h4 {
+                  
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+    
+                li {
+                 
+                    margin-left: 1rem;
+                }
+    
+            }
+    
+            .accordion-button {
+             
+                font-size: 1.8rem;
+            
+                padding-left: 5%;
+    
+                &::after {
+                 
+                }
+            }
+        }
+    }
 }
 
 //mobile
@@ -2474,6 +2917,99 @@ footer {
 
                         img {}
                     }
+                }
+            }
+        }
+    }
+    .contenedor-faq {
+  
+        flex-direction: column;
+        width:95%;
+        margin: 0 auto;
+    
+        .contenedor-titlefaq {
+        
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+    
+            h1 {
+            
+                font-size: 3rem;
+             
+            }
+            h2{
+            
+                font-size: 2.3rem;
+          
+            }
+            hr{
+                width:35%;
+                height:12px;
+          
+                opacity: 1;
+                margin: 0;
+            }
+        }
+    }
+    
+    .contenedor-accordionelement {
+    margin-top: 2rem;
+        .accordion {
+            margin: 1.5rem 0;
+    
+            &:nth-child(even) {
+                .accordion-item {
+                   
+    
+                    .accordion-button {
+                
+                    }
+    
+                }
+            }
+    
+            &:nth-child(odd) {
+                .accordion-item {
+                 
+    
+                    .accordion-button {
+                     
+                    }
+    
+                }
+            }
+    
+            .accordion-body {
+            
+    
+                li,
+                p,
+                h3,
+                h4 {
+                  
+                }
+    
+                p {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+    
+                li {
+                    font-size: 1rem;
+                    margin-left: 1rem;
+                }
+    
+            }
+    
+            .accordion-button {
+             
+                font-size: 1.4rem;
+            
+                padding-left: 5%;
+    
+                &::after {
+                 
                 }
             }
         }
