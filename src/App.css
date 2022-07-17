@@ -73,6 +73,65 @@ p {
   background-size: cover;
 }
 
+.contenedor-bannertitle .bannertitle-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10vh;
+  font-weight: 800;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido p {
+  text-indent: 50px;
+  font-size: 1.5rem;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1.2rem 0;
+  color: #06a548;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido article {
+  background-color: #4eaa03;
+  padding: 1.2rem;
+  margin: 2rem auto;
+  height: auto;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido article h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1.2rem 0;
+  color: white;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido article table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido article table thead tr {
+  background-color: white;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido article table thead tr td {
+  border: 1px solid #4eaa03;
+  color: #06a548;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contenedor-cortesprogramados .cortesprogramados-contenido article table tr td {
+  border: 1px solid white;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
 .nav-bg {
   background-color: #c7eb7a;
   display: -webkit-box;
@@ -2248,6 +2307,53 @@ footer .link-list-footer li ul li::before {
     font-size: 1.8rem;
     padding-left: 5%;
   }
+  .contenedor-bannertitle .bannertitle-title {
+    font-size: 3rem;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido p {
+    text-indent: 30px;
+    font-size: 1.5rem;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1.2rem 0;
+    color: #06a548;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article {
+    background-color: #4eaa03;
+    padding: 1.2rem;
+    margin: 2rem auto;
+    height: auto;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1.2rem 0;
+    color: white;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table thead tr {
+    background-color: white;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table thead tr td {
+    border: 1px solid #4eaa03;
+    color: #06a548;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table tr td {
+    border: 1px solid white;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -2400,6 +2506,39 @@ footer .link-list-footer li ul li::before {
   .contenedor-accordionelement .accordion .accordion-button {
     font-size: 1.4rem;
     padding-left: 5%;
+  }
+  .contenedor-bannertitle .bannertitle-title {
+    font-size: 2.5rem;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article {
+    background-color: #4eaa03;
+    padding: .5rem;
+    margin: 2rem auto;
+    height: auto;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1.2rem 0;
+    color: white;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table thead tr {
+    background-color: white;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table thead tr td {
+    border: 1px solid #4eaa03;
+    color: #06a548;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .contenedor-cortesprogramados .cortesprogramados-contenido article table tr td {
+    border: 1px solid white;
+    padding: 0.5rem;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=App.css.map */
