@@ -1626,6 +1626,85 @@ footer .link-list-footer li ul li::before {
   width: 100%;
 }
 
+.contenedor-oneinternet .oneinternet-content {
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+.contenedor-oneinternet .oneinternet-content p {
+  font-size: 1.5rem;
+}
+
+.contenedor-oneinternet .oneinternet-content a {
+  color: black;
+  text-decoration: underline;
+}
+
+.contenedor-oneinternet .oneinternet-content .links-onepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-oneinternet .oneinternet-content .links-onepage .link-name {
+  color: #4eaa03;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.contenedor-oneinternet .oneinternet-content .links-onepage .btn-oneinternet {
+  background-color: #06a548;
+  border: none;
+  text-decoration: none;
+  height: 2rem;
+  min-width: 150px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contenedor-oneinternet .oneinternet-content .links-onepage .btn-oneinternet::after {
+  content: ">>";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00c853;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  padding: 0 0.5rem;
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
   .nav-bg .nav.navdesktop .nav-links .nav-item a {
     font-size: 1.1rem;
@@ -2408,6 +2487,12 @@ footer .link-list-footer li ul li::before {
   .banner .banner-text h4 {
     width: 90%;
   }
+  .contenedor-oneinternet .oneinternet-content {
+    width: 95%;
+  }
+  .contenedor-oneinternet .oneinternet-content p {
+    font-size: 1.5rem;
+  }
   .lambada h1 {
     font-size: 2.5rem;
   }
@@ -2557,6 +2642,80 @@ footer .link-list-footer li ul li::before {
     -o-object-position: center;
        object-position: center;
     margin: 0 auto;
+  }
+  .contenedor-oneinternet .oneinternet-content {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  .contenedor-oneinternet .oneinternet-content p {
+    font-size: 1.5rem;
+  }
+  .contenedor-oneinternet .oneinternet-content a {
+    color: black;
+    text-decoration: underline;
+  }
+  .contenedor-oneinternet .oneinternet-content .links-onepage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor-oneinternet .oneinternet-content .links-onepage .link-name {
+    color: #4eaa03;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  .contenedor-oneinternet .oneinternet-content .links-onepage .btn-oneinternet {
+    background-color: #06a548;
+    border: none;
+    text-decoration: none;
+    height: 2rem;
+    min-width: 150px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .contenedor-oneinternet .oneinternet-content .links-onepage .btn-oneinternet::after {
+    content: ">>";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #00c853;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 100%;
+    padding: 0 0.5rem;
+    margin-left: 1rem;
   }
 }
 

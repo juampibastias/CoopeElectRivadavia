@@ -1356,6 +1356,63 @@ footer {
     width: 100%;
 }
 
+.contenedor-oneinternet{
+    .oneinternet-content{
+        width: 80%;
+        margin: 1.5rem auto;
+        p{
+            font-size: 1.5rem;
+            
+        }
+        a{
+            color: black;
+            text-decoration: underline;
+        }
+        .links-onepage{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .link-name{
+                color: $green_darker;
+                font-weight: bold;
+                font-size: 2rem;
+                margin-left: 1rem;
+                text-decoration: none;
+            }
+            .btn-oneinternet{
+                background-color: #06a548;
+                border: none;
+              text-decoration: none;
+                height: 2rem;
+                min-width: 150px;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                padding-left: 1rem;
+                justify-content: space-between;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+    
+                &::after{
+                    content:">>";
+                    display: flex;
+                    align-items: center;
+                    background-color: #00c853;
+                    width: max-content;
+                    height: 100%;
+                    padding: 0 0.5rem;
+                    margin-left: 1rem;
+                    
+                }
+            }
+        }
+        
+    }
+}
+
 //desktop
 @media screen and (max-width: 1200px) {
     .nav-bg {
@@ -2822,6 +2879,17 @@ footer {
 
     }
 
+    .contenedor-oneinternet{
+        .oneinternet-content{
+            width: 95%;
+           
+            p{
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+
     //Lambada
     .lambada {
 
@@ -3051,6 +3119,63 @@ footer {
         object-fit: contain;
         object-position: center;
         margin: 0 auto;
+    }
+}
+.contenedor-oneinternet{
+    .oneinternet-content{
+        width: 100%;
+        margin: 1.5rem auto;
+        p{
+            font-size: 1.5rem;
+            
+        }
+        a{
+            color: black;
+            text-decoration: underline;
+        }
+        .links-onepage{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            .link-name{
+                color: $green_darker;
+                font-weight: bold;
+                font-size: 1.6rem;
+                margin-left: 1rem;
+                text-decoration: none;
+            }
+            .btn-oneinternet{
+                background-color: #06a548;
+                border: none;
+              text-decoration: none;
+                height: 2rem;
+                min-width: 150px;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                padding-left: 1rem;
+                justify-content: space-between;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+    
+                &::after{
+                    content:">>";
+                    display: flex;
+                    align-items: center;
+                    background-color: #00c853;
+                    width: max-content;
+                    height: 100%;
+                    padding: 0 0.5rem;
+                    margin-left: 1rem;
+                    
+                }
+            }
+        }
+        
     }
 }
 
