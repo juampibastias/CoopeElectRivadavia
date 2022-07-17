@@ -1,12 +1,13 @@
 import React from "react";
-import Banner from "../componets/banner";
+import AccordionElement from "../componets/elements/accordionelement";
 
 
 const PreguntasFrecuentes = () => {
 
     return(
         <div className="contenedor-faq">
-            <Banner textoVisible='none' img="/InformacionUtil2.jpg" />
+        <AccordionElement />
+           
         </div>
     )
 }

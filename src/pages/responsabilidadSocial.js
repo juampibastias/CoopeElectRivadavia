@@ -1,10 +1,12 @@
 import React from "react";
-import TitleGeneric from "../componets/titulogen";
+import BannerTitle from "../componets/bannertitle";
 
 const ResponsabilidadSocial =()=>{
     return(
-        <div>
-            <TitleGeneric text="responsabilidad social" />
+        <div className="contenedor-responsabilidadsocial">
+            <div className="contenedor-banner">
+              <BannerTitle direccionimagen={"url(/TarifaSocial2.jpg)"} titulo={"Tarifa Social"}/>
+            </div>
         </div>
     )
 }

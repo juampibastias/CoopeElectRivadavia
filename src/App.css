@@ -57,6 +57,22 @@ p {
   border-bottom: 2px solid white;
 }
 
+.contenedor-bannertitle {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
 .nav-bg {
   background-color: #c7eb7a;
   display: -webkit-box;
