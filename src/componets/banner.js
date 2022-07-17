@@ -2,6 +2,7 @@ import React from "react";
 
 //TextoVisible = flex/none/
 //img = url de la imagen
+    // este banner contiene un TEXTO DEBAJO 
 const Banner =(promp)=>{
 return(
     <div className="banner">
