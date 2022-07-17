@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Banner from "../componets/banner";
-import imagen from "../images/noticia.png";
 import BloqueTexto from "../componets/textBlock";
-const Novedades =()=>{
-    return(
-        <div className="contenedor">
-            <Banner img={imagen} textoVisible="none" />
-            <BloqueTexto alineacion="left" titulo="Título de la nota" texto="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-�ncidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
-quis nostrud exerci ta�on ullamcorper suscipit lobor�s nisl ut" />
-        </div>
-    )
-}
+import axios from "axios";
+
+const Novedades = () => {
+  const [loading, setLoading] = useState(false);
+  const [novedades, setNovedades] = useState([]);
+
+  useEffect(() => {
+    const cargarNovedades = async () => {
+        setLoading(true);
+        const response = await axios.get('http://localhost:3000/api/novedades');
+        setNovedades(response.data);
+        setLoading(false);
+
+    };
+    cargarNovedades();
+  }, []);
+
+  return (
+    <div className="contenedor">
+    {loading ? (
+        <p>Cargando...</p>
+    ) : (
+    novedades.map(item =>
+      <><Banner img={item.imagen} textoVisible="none" /><BloqueTexto
+            alineacion="left"
+            titulo={item.titulo}
+            texto={item.cuerpo} /></>))}
+    </div>
+  );
+};
 export default Novedades;
