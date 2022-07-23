@@ -11,9 +11,9 @@ const FollowUs = ()=>{
             </div>
             <div className="social-media-container">
                 <ul>
-                    <li><a href="#"><img src={social1} alt=""/></a></li>
-                    <li><a href="#"><img src={social2} alt=""/></a></li>
-                    <li><a href="#"><img src={social3} alt=""/></a></li>
+                    <li><a href="/"><img src={social1} alt=""/></a></li>
+                    <li><a href="/"><img src={social2} alt=""/></a></li>
+                    <li><a href="/"><img src={social3} alt=""/></a></li>
 
                 </ul>
             </div>

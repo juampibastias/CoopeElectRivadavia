@@ -13,21 +13,21 @@ const ContactoMod = ()=>{
                     <li>
                         <img src={contacto1} alt=""/>
                         <div className="contacto-info-item">
-        <a href="#"><h3>4445843</h3></a>
+        <a href="tel:4445843"><h3>4445843</h3></a>
         <p>Guardia de reclamos</p>
                         </div>
                     </li>
                     <li>
                         <img src={contacto2} alt=""/>
                         <div className="contacto-info-item">
-        <a href="#"><h3>4445843</h3></a>
+        <a href="tel:4445843"><h3>4445843</h3></a>
         <p>Guardia de reclamos</p>
                         </div>
                     </li>
                     <li>
                         <img src={contacto3} alt=""/>
                         <div className="contacto-info-item">
-        <a href="#"><h3>4445843</h3></a>
+        <a href="tel:4445843"><h3>4445843</h3></a>
         <p>Guardia de reclamos</p>
                         </div>
                     </li>
@@ -35,7 +35,7 @@ const ContactoMod = ()=>{
                 </ul>
             </div>
             <div className="contenedor-img-chat">
-            <a href="#">
+            <a href="/">
                 <img src={contact4} alt={contact4} />
                 <img src={contact5}alt={contact5} />
                 </a>  

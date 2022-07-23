@@ -39,7 +39,7 @@ function App() {
           <Route path="/subsidios" element={<Subsidios />} />
           <Route path="/venta-de-materiales" element={<Venta />} />
           <Route path="/one-internet" element={<Internet />} />
-          <Route path="/Nosotros" element={<Nosotros />} />
+          <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/Concesion" element={<Concesion />} />
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/ResponsabilidadSocial" element={<ResponsabilidadSocial />} />

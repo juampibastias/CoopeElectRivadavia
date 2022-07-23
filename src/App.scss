@@ -82,30 +82,109 @@ $green_lighter: #72cb10;
 
     }
 }
-//pagina responsabilidad social
-.contenedor-responsabilidadsocial{
-.responsabilidad-content{
-    width: 80%;
-    margin: 1.5rem auto;
-    h3{
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: $green_darker;
-        margin-bottom: 2rem;
-    }
-    p{
-        font-size: 1.3rem;
 
-    }
-    li{
-        font-size: 1.2rem;
-       margin-bottom: 0.5rem;
-    }
-    a{
-        font-size: 1.3rem;
-        color:black;
+.contenedor-nosotros {
+    .nosotros-content {
+        width: 70%;
+        margin: 4rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+
+        .list {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                text-decoration: underline;
+                margin-bottom: 2rem;
+            }
+
+            ul {
+                text-align: center;
+
+                li {
+                    list-style: none;
+                    margin: 2rem;
+
+                    h4 {
+                        font-weight: bolder;
+                    }
+
+                    p {
+                        font-weight: lighter;
+                    }
+
+                    h4,
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .text {
+
+            margin: 2rem;
+
+            h2 {
+                margin: 2rem 0;
+                text-decoration: underline;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            img {
+                max-width: 80vw;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                margin-bottom: 2rem;
+            }
+        }
     }
 }
+
+//pagina responsabilidad social
+.contenedor-responsabilidadsocial {
+    .responsabilidad-content {
+        width: 80%;
+        margin: 1.5rem auto;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $green_darker;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            font-size: 1.3rem;
+            color: black;
+        }
+    }
 }
 
 //cortes programados
@@ -573,7 +652,6 @@ $green_lighter: #72cb10;
                 opacity: 0.3;
                 transition: all 0.3s ease-in-out;
 
-                &:hover {}
             }
 
             //icono 
@@ -982,23 +1060,28 @@ footer {
                     background-color: lightgreen;
                     margin: 1rem;
                     margin-left: 0;
-                   
+
                 }
             }
         }
-        .cotizar{
+
+        .cotizar {
             margin-top: 3rem;
+
             h3 {
                 font-size: 3rem;
                 font-weight: bold;
                 color: $green_darker;
             }
-            p{
+
+            p {
                 font-size: 1.3rem;
             }
-            .contact-form{
+
+            .contact-form {
                 width: 100%;
-                .optional-text{
+
+                .optional-text {
                     display: none;
                 }
             }
@@ -1536,33 +1619,15 @@ footer {
         .nav.navdesktop {
 
 
-            .redes-sociales {
-
-                .nav-item {
-
-
-                    a {
-
-
-                        img {}
-                    }
-                }
-            }
 
             .nav-links {
 
 
                 .nav-item {
 
-                    .dropdown {
-                        .dropdown-toggle {
-                            &:focus {}
-                        }
 
-                        .dropdown-menu {}
-                    }
 
-                    .vr {}
+
 
                     a {
                         font-size: 1.1rem;
@@ -1576,11 +1641,7 @@ footer {
                 }
             }
 
-            .Logo-link {
 
-
-                .logo-coope-home {}
-            }
 
 
 
@@ -1599,15 +1660,7 @@ footer {
                 top: -25%;
                 right: 10%;
 
-                .nav-item {
 
-
-                    a {
-
-
-                        img {}
-                    }
-                }
             }
 
             .nav-links {
@@ -1616,7 +1669,7 @@ footer {
                 .nav-item {
 
 
-                    .vr {}
+
 
                     a {
 
@@ -1667,27 +1720,7 @@ footer {
 
                 }
 
-                .card-body {
 
-
-
-
-
-
-
-                    .card-title {}
-
-                    .card-text {}
-
-                    .nav-item {
-
-
-
-                        img {}
-
-
-                    }
-                }
             }
 
             img {
@@ -1704,7 +1737,7 @@ footer {
 
                 position: relative;
 
-                .card-title {}
+
 
                 .card-text {
                     font-size: 1.2rem;
@@ -1754,18 +1787,13 @@ footer {
 
 
 
-                        h3,
-                        a,
-                        p {}
 
                         h3 {
                             font-weight: bold;
                         }
                     }
 
-                    &:hover {
-                        .contacto-info-item {}
-                    }
+
                 }
             }
         }
@@ -1787,23 +1815,6 @@ footer {
         }
     }
 
-    .banner {
-
-
-        img {}
-
-        .banner-text {
-
-
-            h4 {
-
-
-                a {}
-            }
-
-        }
-
-    }
 
     //Accordion precuentes frecuentes
     .contenedor-faq {
@@ -1846,31 +1857,11 @@ footer {
         .accordion {
             margin: 1.5rem 0;
 
-            &:nth-child(even) {
-                .accordion-item {
 
-
-                    .accordion-button {}
-
-                }
-            }
-
-            &:nth-child(odd) {
-                .accordion-item {
-
-
-                    .accordion-button {}
-
-                }
-            }
 
             .accordion-body {
 
 
-                li,
-                p,
-                h3,
-                h4 {}
 
                 p {
                     font-size: 1.2rem;
@@ -1890,7 +1881,7 @@ footer {
 
                 padding-left: 15%;
 
-                &::after {}
+
             }
         }
     }
@@ -1927,7 +1918,7 @@ footer {
             width: 70%;
             text-align: center;
 
-            p {}
+
         }
 
         .payment-method-list {
@@ -1956,7 +1947,7 @@ footer {
             width: 80%;
 
 
-            a {}
+
         }
 
         .background-form {
@@ -1975,11 +1966,7 @@ footer {
                 .input-item {
 
 
-                    button {
 
-
-                        &:hover {}
-                    }
 
                     img {
                         width: 30px;
@@ -2003,7 +1990,7 @@ footer {
                         }
                     }
 
-                    &:nth-child(3) {}
+
 
                     .label-ta {
 
@@ -2054,7 +2041,7 @@ footer {
                         display: flex;
                         margin: 0 0.5rem;
 
-                        img {}
+
                     }
                 }
             }
@@ -2076,14 +2063,8 @@ footer {
                 position: relative;
 
                 //imagen de spinner
-                .spinner-img {
 
 
-                    &:hover {}
-                }
-
-                //icono 
-                img {}
             }
 
             h2 {
@@ -2092,7 +2073,7 @@ footer {
 
             }
 
-            .bis {}
+
         }
     }
 
@@ -2159,27 +2140,6 @@ footer {
 
                 }
 
-                .card-body {
-
-
-
-
-
-
-
-                    .card-title {}
-
-                    .card-text {}
-
-                    .nav-item {
-
-
-
-                        img {}
-
-
-                    }
-                }
             }
 
             img {
@@ -2263,29 +2223,7 @@ footer {
         width: 100%;
 
 
-        .contenedor-itembuscador {
 
-
-            .factura-img {
-
-
-                img {}
-            }
-
-            form {
-
-
-                .item {
-
-
-                    label {
-
-
-                        input {}
-                    }
-                }
-            }
-        }
     }
 
     //PIE DE PAGINA
@@ -2343,7 +2281,7 @@ footer {
     .banner {
 
 
-        img {}
+
 
         .banner-text {
 
@@ -2351,7 +2289,7 @@ footer {
             h4 {
                 width: 70%;
 
-                a {}
+
             }
 
         }
@@ -2398,31 +2336,12 @@ footer {
         .accordion {
             margin: 1.5rem 0;
 
-            &:nth-child(even) {
-                .accordion-item {
 
-
-                    .accordion-button {}
-
-                }
-            }
-
-            &:nth-child(odd) {
-                .accordion-item {
-
-
-                    .accordion-button {}
-
-                }
-            }
 
             .accordion-body {
 
 
-                li,
-                p,
-                h3,
-                h4 {}
+
 
                 p {
                     font-size: 1.2rem;
@@ -2442,7 +2361,7 @@ footer {
 
                 padding-left: 15%;
 
-                &::after {}
+
             }
         }
     }
@@ -2464,15 +2383,7 @@ footer {
                 top: -25%;
                 right: 10%;
 
-                .nav-item {
 
-
-                    a {
-
-
-                        img {}
-                    }
-                }
             }
 
             .nav-links {
@@ -2524,7 +2435,7 @@ footer {
             width: 80%;
 
 
-            a {}
+
         }
 
         .background-form {
@@ -2543,11 +2454,7 @@ footer {
                 .input-item {
                     padding-left: 1rem;
 
-                    button {
 
-
-                        &:hover {}
-                    }
 
                     img {
                         width: 30px;
@@ -2571,7 +2478,7 @@ footer {
                         }
                     }
 
-                    &:nth-child(3) {}
+
 
                     .label-ta {
 
@@ -2630,9 +2537,6 @@ footer {
                         border-radius: 50px;
 
 
-                        h3,
-                        a,
-                        p {}
 
                         h3 {
                             font-weight: bold;
@@ -2696,7 +2600,7 @@ footer {
                         display: flex;
                         margin: 0 0.5rem;
 
-                        img {}
+
                     }
                 }
             }
@@ -2719,14 +2623,7 @@ footer {
                 position: relative;
 
                 //imagen de spinner
-                .spinner-img {
 
-
-                    &:hover {}
-                }
-
-                //icono 
-                img {}
             }
 
             h2 {
@@ -2735,7 +2632,7 @@ footer {
 
             }
 
-            .bis {}
+
         }
     }
 
@@ -2913,9 +2810,7 @@ footer {
 
 
 
-                .card-title {}
 
-                .card-text {}
 
                 .nav-item {
 
@@ -2977,7 +2872,7 @@ footer {
     .banner {
         height: 50vh;
 
-        img {}
+
 
         .banner-text {
 
@@ -2985,7 +2880,7 @@ footer {
             h4 {
                 width: 90%;
 
-                a {}
+
             }
 
         }
@@ -3053,31 +2948,12 @@ footer {
         .accordion {
             margin: 1.5rem 0;
 
-            &:nth-child(even) {
-                .accordion-item {
 
 
-                    .accordion-button {}
 
-                }
-            }
-
-            &:nth-child(odd) {
-                .accordion-item {
-
-
-                    .accordion-button {}
-
-                }
-            }
 
             .accordion-body {
 
-
-                li,
-                p,
-                h3,
-                h4 {}
 
                 p {
                     font-size: 1.2rem;
@@ -3097,7 +2973,7 @@ footer {
 
                 padding-left: 5%;
 
-                &::after {}
+
             }
         }
     }
@@ -3181,11 +3057,6 @@ footer {
             width: 90%;
             text-align: center;
 
-            .factura-img {
-
-
-                img {}
-            }
 
             form {
 
@@ -3200,7 +3071,7 @@ footer {
                     label {
                         width: 100%;
 
-                        input {}
+
                     }
                 }
             }
@@ -3299,6 +3170,80 @@ footer {
         }
     }
 
+    .contenedor-nosotros {
+        .nosotros-content {
+            width: 90%;
+            margin: 4rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h2 {
+                text-transform: capitalize;
+                text-decoration: underline;
+            }
+
+            .list {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    text-decoration: underline;
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    text-align: center;
+
+                    li {
+                        list-style: none;
+                        margin: 2rem 0;
+
+                        h4 {
+                            font-weight: bolder;
+                        }
+
+                        p {
+                            font-weight: lighter;
+                        }
+
+                        h4,
+                        p {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .text {
+
+                margin: 2rem 0;
+
+                h2 {
+                    margin: 2rem 0;
+                    text-decoration: underline;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                img {
+                    max-width: 90vw;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: center;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
 }
 
 //mobile
@@ -3352,7 +3297,7 @@ footer {
     .banner {
 
 
-        img {}
+
 
         .banner-text {
 
@@ -3377,7 +3322,7 @@ footer {
             width: 100%;
 
 
-            a {}
+
         }
 
         .background-form {
@@ -3396,11 +3341,7 @@ footer {
                 .input-item {
                     padding-left: 1rem;
 
-                    button {
 
-
-                        &:hover {}
-                    }
 
                     img {
                         width: 30px;
@@ -3424,7 +3365,6 @@ footer {
                         }
                     }
 
-                    &:nth-child(3) {}
 
                     .label-ta {
 
@@ -3476,7 +3416,7 @@ footer {
                         display: flex;
                         margin: 0 0.5rem;
 
-                        img {}
+
                     }
                 }
             }
@@ -3523,31 +3463,11 @@ footer {
         .accordion {
             margin: 1.5rem 0;
 
-            &:nth-child(even) {
-                .accordion-item {
 
-
-                    .accordion-button {}
-
-                }
-            }
-
-            &:nth-child(odd) {
-                .accordion-item {
-
-
-                    .accordion-button {}
-
-                }
-            }
 
             .accordion-body {
 
 
-                li,
-                p,
-                h3,
-                h4 {}
 
                 p {
                     font-size: 1rem;
@@ -3567,7 +3487,7 @@ footer {
 
                 padding-left: 5%;
 
-                &::after {}
+
             }
         }
     }

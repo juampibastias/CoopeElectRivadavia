@@ -79,6 +79,97 @@ p {
   font-weight: 800;
 }
 
+.contenedor-nosotros .nosotros-content {
+  width: 70%;
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contenedor-nosotros .nosotros-content h2 {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.contenedor-nosotros .nosotros-content .list {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-nosotros .nosotros-content .list h3 {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.contenedor-nosotros .nosotros-content .list ul {
+  text-align: center;
+}
+
+.contenedor-nosotros .nosotros-content .list ul li {
+  list-style: none;
+  margin: 2rem;
+}
+
+.contenedor-nosotros .nosotros-content .list ul li h4 {
+  font-weight: bolder;
+}
+
+.contenedor-nosotros .nosotros-content .list ul li p {
+  font-weight: lighter;
+}
+
+.contenedor-nosotros .nosotros-content .list ul li h4,
+.contenedor-nosotros .nosotros-content .list ul li p {
+  font-size: 1.5rem;
+}
+
+.contenedor-nosotros .nosotros-content .text {
+  margin: 2rem;
+}
+
+.contenedor-nosotros .nosotros-content .text h2 {
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+
+.contenedor-nosotros .nosotros-content .text p {
+  font-size: 1.2rem;
+}
+
+.contenedor-nosotros .nosotros-content .text img {
+  max-width: 80vw;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin-bottom: 2rem;
+}
+
 .contenedor-responsabilidadsocial .responsabilidad-content {
   width: 80%;
   margin: 1.5rem auto;
@@ -2837,6 +2928,84 @@ footer .link-list-footer li ul a {
     height: 100%;
     padding: 0 0.5rem;
     margin-left: 1rem;
+  }
+  .contenedor-nosotros .nosotros-content {
+    width: 90%;
+    margin: 4rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contenedor-nosotros .nosotros-content h2 {
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+  .contenedor-nosotros .nosotros-content .list {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor-nosotros .nosotros-content .list h3 {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+  }
+  .contenedor-nosotros .nosotros-content .list ul {
+    text-align: center;
+  }
+  .contenedor-nosotros .nosotros-content .list ul li {
+    list-style: none;
+    margin: 2rem 0;
+  }
+  .contenedor-nosotros .nosotros-content .list ul li h4 {
+    font-weight: bolder;
+  }
+  .contenedor-nosotros .nosotros-content .list ul li p {
+    font-weight: lighter;
+  }
+  .contenedor-nosotros .nosotros-content .list ul li h4,
+  .contenedor-nosotros .nosotros-content .list ul li p {
+    font-size: 1.5rem;
+  }
+  .contenedor-nosotros .nosotros-content .text {
+    margin: 2rem 0;
+  }
+  .contenedor-nosotros .nosotros-content .text h2 {
+    margin: 2rem 0;
+    text-decoration: underline;
+  }
+  .contenedor-nosotros .nosotros-content .text p {
+    font-size: 1.2rem;
+  }
+  .contenedor-nosotros .nosotros-content .text img {
+    max-width: 90vw;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+    margin-bottom: 2rem;
   }
 }
 
